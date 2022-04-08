@@ -1,3 +1,23 @@
+
+
+"text_main_permission" = "Meie teenuseid kasutades kinnitate, et olete selle dokumendiga tutvunud ja nõustute sellega täielikult: Kasutusleping";
+"placeholder_to_field_text_login_password" = "Parool";
+"placeholder_to_field_text_email" = "Email";
+"placeholder_to_field_text_name" = "Nimi";
+"placeholder_to_field_text_surname" = "Perekonnanimi";
+"sign_up" = "Registreeri";
+"tearms" = "Kasutustingimused";
+
+"text_to_access_permission_checking" = "Olete andnud nõusoleku oma andmete töötlemiseks! Kasutustingimused";
+"error_text_permission" = "Esmalt kinnitage, et olete selle dokumendi läbi lugenud ja sellega täielikult nõus!";
+"done" = "Valmis";
+"btn_go_to_login" = "Kaugemale";
+
+"text_name_section_date_birth" = "Sünnikuupäev";
+"btn_go_to_login_in_register" = "Registreeri";
+"success_request_to_register" = "Sinu meiliaadressile on saadetud e-kiri konto aktiveerimise lingiga!";
+
+
 /* New message from a specific person, not referencing a room */
 "MSG_FROM_USER" = "%@ saatis sõnumi";
 /* New message from a specific person in a named room */

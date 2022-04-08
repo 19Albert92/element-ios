@@ -1,3 +1,23 @@
+
+
+"text_main_permission" = "Gure zerbitzuak erabiltzean, dokumentu hau irakurri duzula eta guztiz ados duzula onartzen duzu: Erabiltzaile-kontratua";
+"placeholder_to_field_text_login_password" = "Pasahitza";
+"placeholder_to_field_text_email" = "Posta elektronikoa";
+"placeholder_to_field_text_name" = "Izena";
+"placeholder_to_field_text_surname" = "Abizena";
+"sign_up" = "Izena eman";
+"tearms" = "Erabilera baldintzak";
+
+"text_to_access_permission_checking" = "Zure datuak tratatzeko baimena eman duzu! Erabilera baldintzak";
+"error_text_permission" = "Lehenik eta behin, ziurtatu dokumentu hau irakurri duzula eta guztiz ados duzula!";
+"done" = "Prest";
+"btn_go_to_login" = "Urrunago";
+
+"text_name_section_date_birth" = "Jaioteguna";
+"btn_go_to_login_in_register" = "Izena eman";
+"success_request_to_register" = "Mezu elektroniko bat bidali da zure helbide elektronikora zure kontua aktibatzeko esteka batekin!";
+
+
 /* New message from a specific person, not referencing a room */
 "MSG_FROM_USER" = "%@ erabiltzaileak mezu bat bidali du";
 /* New message from a specific person in a named room */

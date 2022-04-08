@@ -1,3 +1,23 @@
+
+
+"text_main_permission" = "En utilisant nos services, vous reconnaissez avoir lu et entièrement accepté ce document : Contrat d'utilisation" ;
+"placeholder_to_field_text_login_password" = "Mot de passe" ;
+"placeholder_to_field_text_email" = "E-mail" ;
+"placeholder_to_field_text_name" = "Nom" ;
+"placeholder_to_field_text_surname" = "Nom de famille" ;
+"sign_up" = "S'inscrire" ;
+"tearms" = "Contrat d'utilisation" ;
+
+"text_to_access_permission_checking" = "Vous avez consenti au traitement de vos données ! Contrat d'utilisation" ;
+"error_text_permission" = "Confirmez d'abord que vous avez lu et que vous êtes entièrement d'accord avec ce document !";
+"fait" = "fait" ;
+"btn_go_to_login" = "Suivant" ;
+
+"text_name_section_date_birth" = "Date de naissance" ;
+"btn_go_to_login_in_register" = "S'inscrire";
+"success_request_to_register" = "Un e-mail a été envoyé à votre adresse e-mail avec un lien pour activer votre compte!";
+
+
 /* New message from a specific person, not referencing a room */
 "MSG_FROM_USER" = "%@ a envoyé un message";
 /* New message from a specific person in a named room */

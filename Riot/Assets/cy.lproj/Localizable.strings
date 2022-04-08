@@ -1,3 +1,23 @@
+
+
+"text_main_permission" = "Trwy ddefnyddio ein gwasanaethau, rydych yn cydnabod eich bod wedi darllen ac yn cytuno'n llwyr â'r ddogfen hon: Cytundeb Defnyddiwr";
+"placeholder_to_field_text_login_password" = "Cyfrinair";
+"placeholder_to_field_text_email" = "Ebost";
+"placeholder_to_field_text_name" = "Enw";
+"placeholder_to_field_text_surname" = "Cyfenw";
+"sign_up" = "Cofrestrwch";
+"tearms" = "Telerau defnyddio";
+
+"text_to_access_permission_checking" = "Rydych chi wedi cydsynio i brosesu eich data! Telerau defnyddio";
+"error_text_permission" = "Yn gyntaf, cadarnhewch eich bod wedi darllen y ddogfen hon ac yn cytuno'n llwyr â hi!";
+"done" = "Yn barod";
+"btn_go_to_login" = "Ymhellach";
+
+"text_name_section_date_birth" = "Dyddiad Geni";
+"btn_go_to_login_in_register" = "Cofrestrwch";
+"success_request_to_register" = "Mae e-bost wedi'i anfon i'ch cyfeiriad e-bost gyda dolen i actifadu eich cyfrif!";
+
+
 /* Message title for a specific person in a named room */
 "MSG_FROM_USER_IN_ROOM_TITLE" = "%@ yn %@";
 /* New message from a specific person, not referencing a room */

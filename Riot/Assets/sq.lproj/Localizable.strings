@@ -1,3 +1,21 @@
+
+"text_main_permission" = "Duke përdorur shërbimet tona, ju pranoni se keni lexuar dhe jeni plotësisht dakord me këtë dokument: Marrëveshja e përdoruesit";
+"placeholder_to_field_text_login_password" = "Fjalëkalim";
+"placeholder_to_field_text_email" = "Email";
+"placeholder_to_field_text_name" = "Emri";
+"placeholder_to_field_text_surname" = "Mbiemri";
+"sign_up" = "Regjistrohu";
+"tearms" = "Marrëveshja e përdoruesit";
+
+"text_to_access_permission_checking" = "Ju keni pranuar për përpunimin e të dhënave tuaja! Marrëveshja e përdoruesit";
+"error_text_permission" = "Së pari konfirmoni që e keni lexuar dhe jeni plotësisht dakord me këtë dokument!";
+"done" = "e kryer";
+"btn_go_to_login" = "Tjetër";
+
+"text_name_section_date_birth" = "Data e lindjes";
+"btn_go_to_login_in_register" = "Regjistrohu";
+"success_request_to_register" = "Një email është dërguar në adresën tuaj të emailit me një lidhje për të aktivizuar llogarinë tuaj!";
+
 /* New message from a specific person, not referencing a room */
 "MSG_FROM_USER" = "%@ dërgoi një mesazh";
 /* New message from a specific person in a named room */

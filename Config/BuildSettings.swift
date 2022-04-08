@@ -87,7 +87,7 @@ final class BuildSettings: NSObject {
     }
     
     // Element-Web instance for the app
-    static let applicationWebAppUrlString = "https://app.element.io"
+    static let applicationWebAppUrlString = "https://msg.qaim.me"
     
     
     // MARK: - Localization
@@ -99,10 +99,10 @@ final class BuildSettings: NSObject {
     // MARK: - Server configuration
     
     // Default servers proposed on the authentication screen
-    static let serverConfigDefaultHomeserverUrlString = "https://matrix.org"
+    static let serverConfigDefaultHomeserverUrlString = "https://matrix.m.qaim.me/"
     static let serverConfigDefaultIdentityServerUrlString = "https://vector.im"
     
-    static let serverConfigSygnalAPIUrlString = "https://matrix.org/_matrix/push/v1/notify"
+    static let serverConfigSygnalAPIUrlString = "https://matrix.m.qaim.me/_matrix/push/v1/notify"
     
     
     // MARK: - Legal URLs
@@ -373,10 +373,10 @@ final class BuildSettings: NSObject {
     
     // MARK: - Authentication Screen
     static let authScreenShowRegister = true
-    static let authScreenShowPhoneNumber = true
+    static let authScreenShowPhoneNumber = false
     static let authScreenShowForgotPassword = true
-    static let authScreenShowCustomServerOptions = true
-    static let authScreenShowSocialLoginSection = true
+    static let authScreenShowCustomServerOptions = false
+    static let authScreenShowSocialLoginSection = false
     
     // MARK: - Authentication Options
     static let authEnableRefreshTokens = false

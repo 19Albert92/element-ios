@@ -1,4 +1,22 @@
 
+"text_main_permission" = "Dengan menggunakan layanan kami, Anda mengakui bahwa Anda telah membaca dan sepenuhnya setuju dengan dokumen ini: Perjanjian Pengguna";
+"placeholder_to_field_text_login_password" = "Kata Sandi";
+"placeholder_to_field_text_email" = "Email";
+"placeholder_to_field_text_name" = "Nama";
+"placeholder_to_field_text_surname" = "Nama Belakang";
+"sign_up" = "Daftar";
+"tearms" = "Perjanjian Pengguna";
+
+"text_to_access_permission_checking" = "Anda telah menyetujui pemrosesan data Anda! Perjanjian Pengguna";
+"error_text_permission" = "Pertama konfirmasikan bahwa Anda telah membaca dan sepenuhnya setuju dengan dokumen ini!";
+"done" = "selesai";
+"btn_go_to_login" = "Selanjutnya";
+
+"text_name_section_date_birth" = "Tanggal Lahir";
+"btn_go_to_login_in_register" = "Daftar";
+"success_request_to_register" = "Email telah dikirim ke alamat email Anda dengan tautan untuk mengaktifkan akun Anda!";
+
+
 
 
 /** Key verification **/

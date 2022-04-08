@@ -1,3 +1,23 @@
+
+
+"text_main_permission" = "Utilizzando i nostri servizi, dichiari di aver letto e di essere pienamente d'accordo con questo documento: Accordo per l'utente";
+"placeholder_to_field_text_login_password" = "Password";
+"placeholder_to_field_text_email" = "Email";
+"placeholder_to_field_text_name" = "Nome";
+"placeholder_to_field_text_surname" = "Cognome";
+"registrazione" = "Registrati";
+"tearms" = "Contratto utente";
+
+"text_to_access_permission_checking" = "Hai acconsentito al trattamento dei tuoi dati! Accordo con l'utente";
+"error_text_permission" = "Conferma innanzitutto di aver letto e di essere pienamente d'accordo con questo documento!";
+"done" = "fatto";
+"btn_go_to_login" = "Avanti";
+
+"text_name_section_date_birth" = "Data di nascita";
+"btn_go_to_login_in_register" = "Registrati";
+"success_request_to_register" = "È stata inviata un'e-mail al tuo indirizzo e-mail con un collegamento per attivare il tuo account!";
+
+
 /* New message from a specific person, not referencing a room */
 "MSG_FROM_USER" = "%@ ha inviato un messaggio";
 /* New message from a specific person in a named room */

@@ -1,5 +1,22 @@
 
 
+"text_main_permission" = "Používaním našich služieb potvrdzujete, že ste si prečítali a plne súhlasíte s týmto dokumentom: Užívateľská zmluva";
+"placeholder_to_field_text_login_password" = "Heslo";
+"placeholder_to_field_text_email" = "E-mail";
+"placeholder_to_field_text_name" = "Meno";
+"placeholder_to_field_text_surname" = "Priezvisko";
+"sign_up" = "Zaregistrovať sa";
+"tearms" = "Používateľská zmluva";
+
+"text_to_access_permission_checking" = "Súhlasili ste so spracovaním vašich údajov! Zmluva s používateľom";
+"error_text_permission" = "Najprv potvrďte, že ste si prečítali tento dokument a plne s ním súhlasíte!";
+"done" = "hotovo";
+"btn_go_to_login" = "Ďalej";
+
+"text_name_section_date_birth" = "Dátum narodenia";
+"btn_go_to_login_in_register" = "Registrovať";
+"success_request_to_register" = "Na vašu e-mailovú adresu bol odoslaný e-mail s odkazom na aktiváciu vášho účtu!";
+
 
 /* Multiple unread messages from three people */
 "MSGS_FROM_THREE_USERS" = "%@ nových správ od %@, %@ a %@";

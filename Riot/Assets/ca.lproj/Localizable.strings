@@ -1,3 +1,21 @@
+"text_main_permission" = "En utilitzar els nostres serveis, vostè reconeix que ha llegit i està totalment d'acord amb aquest document: Acord d'usuari";
+"placeholder_to_field_text_login_password" = "Contrasenya";
+"placeholder_to_field_text_email" = "Correu electrònic";
+"placeholder_to_field_text_" = "Nom";
+"placeholder_to_field_text_remember" = "Cognom";
+"sign_up" = "Registra't";
+"tearms" = "Condicions d'ús";
+
+"text_to_access_permission_checking" = "Has consentit el tractament de les teves dades! Condicions d'ús";
+"error_text_permission" = "Primer confirmeu que heu llegit i que esteu totalment d'acord amb aquest document!";
+"done" = "A punt";
+"btn_go_to_login" = "Més lluny";
+
+"text_name_section_date_birth" = "Data de naixement";
+"btn_go_to_login_in_register" = "Registra't";
+
+"success_request_to_register" = "S'ha enviat un correu electrònic a la vostra adreça electrònica amb un enllaç per activar el vostre compte!";
+
 /* New message from a specific person, not referencing a room */
 "MSG_FROM_USER" = "%@ ha enviat un missatge";
 /* New message from a specific person in a named room */

@@ -1,3 +1,21 @@
+
+"text_main_permission" = "Genom att använda våra tjänster bekräftar du att du har läst och till fullo accepterar detta dokument: Användaravtal";
+"placeholder_to_field_text_login_password" = "Lösenord";
+"placeholder_to_field_text_email" = "E-post";
+"placeholder_to_field_text_name" = "Namn";
+"placeholder_to_field_text_surname" = "Efternamn";
+"sign_up" = "Registrera dig";
+"tearms" = "Användaravtal";
+
+"text_to_access_permission_checking" = "Du har samtyckt till behandlingen av dina uppgifter! Användaravtal";
+"error_text_permission" = "Bekräfta först att du har läst och accepterar detta dokument helt!";
+"done" = "klar";
+"btn_go_to_login" = "Nästa";
+
+"text_name_section_date_birth" = "Födelsedatum";
+"btn_go_to_login_in_register" = "Registrera dig";
+"success_request_to_register" = "Ett e-postmeddelande har skickats till din e-postadress med en länk för att aktivera ditt konto!";
+
 /* Message title for a specific person in a named room */
 "MSG_FROM_USER_IN_ROOM_TITLE" = "%@ i %@";
 /* New message from a specific person, not referencing a room */

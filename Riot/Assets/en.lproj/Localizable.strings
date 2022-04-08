@@ -1,5 +1,6 @@
 /*
  Copyright 2015 OpenMarket Ltd
+ Copyright 2021 Qwerty Networks Llc
  
  Licensed under the Apache License, Version 2.0 (the "License");
  you may not use this file except in compliance with the License.
@@ -13,6 +14,25 @@
  See the License for the specific language governing permissions and
  limitations under the License.
  */
+
+
+"text_main_permission" = "By using our services, you acknowledge that you have read and fully agree with this document: User Agreement";
+"placeholder_to_field_text_login_password" = "Password";
+"placeholder_to_field_text_email" = "Email";
+"placeholder_to_field_text_name" = "Name";
+"placeholder_to_field_text_surname" = "Surname";
+"sign_up" = "Register";
+"tearms" = "User Agreement";
+
+"text_to_access_permission_checking" = "You have consented to the processing of your data! User Agreement";
+"error_text_permission" = "First confirm that you have read and fully agree with this document!";
+"done" = "Ready";
+"btn_go_to_login" = "Farther";
+
+"text_name_section_date_birth" = "Date of Birth";
+"btn_go_to_login_in_register" = "Register";
+"success_request_to_register" = "An email has been sent to your email address with a link to activate your account!";
+
 
 /** General **/
 

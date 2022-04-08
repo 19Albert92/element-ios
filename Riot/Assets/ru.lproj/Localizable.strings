@@ -1,3 +1,22 @@
+
+"text_main_permission" = "Используя наши услуги, вы подтверждаете, что прочитали и полностью согласны с этим документом: Пользовательское Соглашение";
+"placeholder_to_field_text_login_password" = "Пароль";
+"placeholder_to_field_text_email" = "Email";
+"placeholder_to_field_text_name" = "Имя";
+"placeholder_to_field_text_surname" = "Фамилия";
+"sign_up" = "Зарегистрироваться";
+"tearms" = "Пользовательское Соглашение";
+
+"text_to_access_permission_checking" = "Вы дали согласие на обработку ваших данных! Пользовательское Соглашение";
+"error_text_permission" = "Сначала подтвердите, что вы прочитали и полностью согласны с этим документом!";
+"done" = "Готово";
+"btn_go_to_login" = "Дальше";
+
+"text_name_section_date_birth" = "Дата Рождения";
+"btn_go_to_login_in_register" = "Зарегестрироваться";
+"success_request_to_register" = "На ваш адрес электронной почты отправлено письмо со ссылкой для активации аккаунта!";
+
+
 /* New message from a specific person, not referencing a room */
 "MSG_FROM_USER" = "Сообщение от %@";
 /* New message from a specific person in a named room */

@@ -1,3 +1,23 @@
+
+"text_main_permission" = "โดยการใช้บริการของเรา คุณรับทราบว่าคุณได้อ่านและยอมรับอย่างเต็มที่กับเอกสารนี้: ข้อตกลงผู้ใช้";
+"placeholder_to_field_text_login_password" = "รหัสผ่าน";
+"placeholder_to_field_text_email" = "อีเมล";
+"placeholder_to_field_text_name" = "ชื่อ";
+"placeholder_to_field_text_surname" = "นามสกุล";
+"sign_up" = "สมัคร";
+"teams" = "ข้อตกลงผู้ใช้";
+
+"text_to_access_permission_checking" = "คุณยินยอมให้มีการประมวลผลข้อมูลของคุณ! ข้อตกลงผู้ใช้";
+"error_text_permission" = "ขั้นแรกให้ยืนยันว่าคุณได้อ่านและเห็นด้วยกับเอกสารนี้อย่างเต็มที่!";
+"done" = "เสร็จสิ้น";
+"btn_go_to_login" = "ถัดไป";
+
+"text_name_section_date_birth" = "วันเกิด";
+"btn_go_to_login_in_register" = "ลงทะเบียน";
+"success_request_to_register" = "อีเมลถูกส่งไปยังที่อยู่อีเมลของคุณพร้อมลิงก์เพื่อเปิดใช้งานบัญชีของคุณแล้ว!";
+
+
+
 /* Message title for a specific person in a named room */
 "MSG_FROM_USER_IN_ROOM_TITLE" = "%@ ใน %@";
 /* New message from a specific person, not referencing a room */

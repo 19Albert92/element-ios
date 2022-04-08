@@ -1,3 +1,21 @@
+//"text_main_permission" = "通過使用我們的服務，您承認您已閱讀並完全同意本文檔：用戶協議";
+//"placeholder_to_field_text_login_password" = "密碼";
+//"placeholder_to_field_text_email" = "電子郵件";
+//"placeholder_to_field_text_name" = "名稱";
+//"placeholder_to_field_text_surname" = "姓氏";
+//"sign_up" = "註冊";
+//"tearms" = "用戶協議"；
+
+//"text_to_access_permission_checking" = "您已同意處理您的數據！用戶協議";
+//"error_text_permission" = "首先確認您已閱讀並完全同意本文檔！";
+//"done" = "完成"；
+//"btn_go_to_login" = "下一個";
+//
+//"text_name_section_date_birth" = "出生日期";
+//"btn_go_to_login_in_register" = "註冊";
+//"success_request_to_register" = "一封電子郵件已發送到您的電子郵件地址，其中包含激活您帳戶的鏈接！";
+
+
 /* New message from a specific person, not referencing a room */
 "MSG_FROM_USER" = "%@ 发送了一条消息";
 /* New message from a specific person in a named room */

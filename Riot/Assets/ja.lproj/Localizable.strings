@@ -1,3 +1,22 @@
+
+"text_main_permission" = "当社のサービスを使用することにより、このドキュメントを読み、完全に同意したことになります：ユーザー契約";
+"placeholder_to_field_text_login_password"="パスワード";
+"placeholder_to_field_text_email"="メール";
+"placeholder_to_field_text_name"="名前";
+"placeholder_to_field_text_surname"="名前";
+"sign_up"="サインアップ";
+"tearms"="ユーザー契約";
+
+"text_to_access_permission_checking" = "データの処理に同意しました！ユーザー契約";
+"error_text_permission" = "まず、このドキュメントを読み、完全に同意したことを確認してください！";
+"done"="完了";
+"btn_go_to_login"="次へ";
+
+"text_name_section_date_birth"="生年月日";
+"btn_go_to_login_in_register"="登録";
+"success_request_to_register" = "アカウントをアクティブ化するためのリンクが記載されたメールがあなたのメールアドレスに送信されました！";
+
+
 /* New message from a specific person, not referencing a room */
 "MSG_FROM_USER" = "%@ さんからメッセージ";
 /* New message from a specific person in a named room */

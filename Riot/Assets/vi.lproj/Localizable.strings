@@ -1,3 +1,22 @@
+
+"text_main_permission" = "Bằng việc sử dụng dịch vụ của chúng tôi, bạn xác nhận rằng bạn đã đọc và hoàn toàn đồng ý với tài liệu này: Thỏa thuận người dùng";
+"placeholder_to_field_text_login_password" = "Mật khẩu";
+"placeholder_to_field_text_email" = "Email";
+"placeholder_to_field_text_name" = "Tên";
+"placeholder_to_field_text_surname" = "Họ";
+"sign_up" = "Đăng ký";
+"dropsms" = "Thỏa thuận Người dùng";
+
+"text_to_access_permission_checking" = "Bạn đã đồng ý với việc xử lý dữ liệu của mình! Thỏa thuận Người dùng";
+"error_text_permission" = "Trước tiên hãy xác nhận rằng bạn đã đọc và hoàn toàn đồng ý với tài liệu này!";
+"done" = "xong";
+"btn_go_to_login" = "Tiếp theo";
+
+"text_name_section_date_birth" = "Ngày sinh";
+"btn_go_to_login_in_register" = "Đăng ký";
+"success_request_to_register" = "Một email đã được gửi đến địa chỉ email của bạn với một liên kết để kích hoạt tài khoản của bạn!";
+
+
 /* New message from a specific person, not referencing a room */
 "MSG_FROM_USER" = "%@ đã gửi một tin nhắn";
 /* New message from a specific person in a named room */

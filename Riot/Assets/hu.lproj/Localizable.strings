@@ -1,3 +1,23 @@
+
+
+"text_main_permission" = "Szolgáltatásaink használatával Ön elismeri, hogy elolvasta és teljes mértékben elfogadja ezt a dokumentumot: Felhasználói megállapodás";
+"placeholder_to_field_text_login_password" = "Jelszó";
+"placeholder_to_field_text_email" = "E-mail";
+"placeholder_to_field_text_name" = "Név";
+"placeholder_to_field_text_surname" = "Vezetéknév";
+"sign_up" = "Regisztrálás";
+"tearms" = "Felhasználói Szerződés";
+
+"text_to_access_permission_checking" = "Ön hozzájárult adatai feldolgozásához! Felhasználói megállapodás";
+"error_text_permission" = "Először erősítse meg, hogy elolvasta és teljes mértékben egyetért ezzel a dokumentummal!";
+"done" = "kész";
+"btn_go_to_login" = "Következő";
+
+"text_name_section_date_birth" = "Születési dátum";
+"btn_go_to_login_in_register" = "Regisztrálás";
+"success_request_to_register" = "E-mailt küldtünk az Ön e-mail címére a fiók aktiválásához szükséges linkkel!";
+
+
 /* New message from a specific person, not referencing a room */
 "MSG_FROM_USER" = "%@ üzenet elküldve";
 /* New message from a specific person in a named room */

@@ -271,7 +271,9 @@ internal class Asset: NSObject {
     internal static let tabHome = ImageAsset(name: "tab_home")
     internal static let tabPeople = ImageAsset(name: "tab_people")
     internal static let tabRooms = ImageAsset(name: "tab_rooms")
+    internal static let imagesIconQAIMWhite = ImageAsset(name: "images_icon_QAIM_white")
     internal static let launchScreenLogo = ImageAsset(name: "launch_screen_logo")
+    internal static let qaimLogoAndText = ImageAsset(name: "qaim_logo_and_text")
   }
   @objcMembers
   @objc(AssetSharedImages) internal class SharedImages: NSObject {

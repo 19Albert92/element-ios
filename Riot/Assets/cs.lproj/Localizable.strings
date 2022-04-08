@@ -1,4 +1,19 @@
+"text_main_permission" = "Pomocí našich služeb potvrzujete, že jste si přečetli a plně souhlasíte s tímto dokumentem: uživatelská smlouva";
+"placeholder_to_field_text_login_password" = "Heslo";
+"placeholder_to_field_text_email" = "E-mailem";
+"placeholder_to_field_text_name" = "Název";
+"placeholder_to_field_text_surname" = "Příjmení";
+"sign_up" = "Registrovat";
+"tearms" = "Podmínky použití";
 
+"text_to_access_permission_checking" = "Souhlasili jste se zpracováním svých údajů! Podmínky použití";
+"error_text_permission" = "Nejprve potvrďte, že jste si přečetli tento dokument a plně s ním souhlasíte!";
+"done" = "Připraveno";
+"btn_go_to_login" = "Dál";
+
+"text_name_section_date_birth" = "Datum narození";
+"btn_go_to_login_in_register" = "Registrovat";
+"success_request_to_register" = "Na vaši e-mailovou adresu byl odeslán e-mail s odkazem na aktivaci vašeho účtu!";
 
 
 /** Reactions **/

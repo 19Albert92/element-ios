@@ -1,4 +1,21 @@
 
+"text_main_permission" = "Með því að nota þjónustu okkar, viðurkennir þú að þú hafir lesið og samþykkir að fullu þetta skjal: Notendasamningur";
+"placeholder_to_field_text_login_password" = "Lykilorð";
+"placeholder_to_field_text_email" = "Tölvupóstur";
+"placeholder_to_field_text_name" = "Nafn";
+"placeholder_to_field_text_surname" = "Eftirnafn";
+"sign_up" = "Skráðu þig";
+"tearms" = "Notendasamningur";
+
+"text_to_access_permission_checking" = "Þú hefur samþykkt vinnslu gagna þinna! Notendasamningur";
+"error_text_permission" = "Staðfestu fyrst að þú hafir lesið og samþykkir þetta skjal að fullu!";
+"done" = "búið";
+"btn_go_to_login" = "Næst";
+
+"text_name_section_date_birth" = "Fæðingardagur";
+"btn_go_to_login_in_register" = "Skráðu þig";
+"success_request_to_register" = "Tölvupóstur hefur verið sendur á netfangið þitt með tengli til að virkja reikninginn þinn!";
+
 
 
 /** Media Messages **/

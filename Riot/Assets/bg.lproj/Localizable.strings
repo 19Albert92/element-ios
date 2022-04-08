@@ -1,3 +1,21 @@
+"text_main_permission" = "Използвайки нашите услуги, вие потвърждавате, че сте прочели и напълно съгласни с този документ: Споразумение с потребителя";
+"placeholder_to_field_text_login_password" = "Парола";
+"placeholder_to_field_text_email" = "Електронна поща";
+"placeholder_to_field_text_name" = "Име";
+"placeholder_to_field_text_surname" = "Фамилия";
+"sign_up" = "Регистрирам";
+"tearms" = "Условия за ползване";
+
+"text_to_access_permission_checking" = "Вие се съгласихте с обработката на вашите данни! Условия за ползване";
+"error_text_permission" = "Първо потвърдете, че сте прочели и напълно съгласни с този документ!";
+"done" = "Готов";
+"btn_go_to_login" = "По-далече";
+
+"text_name_section_date_birth" = "Дата на раждане";
+"btn_go_to_login_in_register" = "Регистрирам";
+"success_request_to_register" = "На вашия имейл адрес е изпратен имейл с връзка за активиране на акаунта ви!";
+
+
 /* New message from a specific person, not referencing a room */
 "MSG_FROM_USER" = "%@ изпрати съобщение";
 /* New message from a specific person in a named room */

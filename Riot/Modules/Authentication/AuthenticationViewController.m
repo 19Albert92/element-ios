@@ -397,6 +397,7 @@ static const CGFloat kAuthInputContainerViewMinHeightConstraintConstant = 150.0;
     {
         [self.submitButton setTitle:[VectorL10n authRegister] forState:UIControlStateNormal];
         [self.submitButton setTitle:[VectorL10n authRegister] forState:UIControlStateHighlighted];
+        
     }
     else if (authType == MXKAuthenticationTypeForgotPassword)
     {
@@ -885,8 +886,14 @@ static const CGFloat kAuthInputContainerViewMinHeightConstraintConstant = 150.0;
         }
         else if (self.authType == MXKAuthenticationTypeLogin)
         {
-            self.authType = MXKAuthenticationTypeRegister;
-            self.navigationItem.rightBarButtonItem.title = [VectorL10n authLogin];
+//            self.authType = MXKAuthenticationTypeRegister;
+//            self.navigationItem.rightBarButtonItem.title = [VectorL10n authLogin];
+            
+            UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+
+            RegistrationViewController *registerViewController = (RegistrationViewController *)[storyboard  instantiateViewControllerWithIdentifier:@"RegistrationViewController"];
+
+            [self.navigationController pushViewController:registerViewController animated:YES];
         }
         else
         {
