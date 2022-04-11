@@ -192,15 +192,15 @@ final class SideMenuCoordinator: NSObject, SideMenuCoordinatorType {
         self.sideMenuNavigationViewController.pushViewController(viewController, animated: true)
     }
     
-    private func showBugReport() {
-        let bugReportViewController = BugReportViewController()
-        
-        // Show in fullscreen to animate presentation along side menu dismiss
-        bugReportViewController.modalPresentationStyle = .fullScreen
-        bugReportViewController.modalTransitionStyle = .crossDissolve
-        
-        self.sideMenuNavigationViewController.present(bugReportViewController, animated: true)
-    }
+//    private func showBugReport() {
+//        let bugReportViewController = BugReportViewController()
+//
+//        // Show in fullscreen to animate presentation along side menu dismiss
+//        bugReportViewController.modalPresentationStyle = .fullScreen
+//        bugReportViewController.modalTransitionStyle = .crossDissolve
+//
+//        self.sideMenuNavigationViewController.present(bugReportViewController, animated: true)
+//    }
     
     private func showHelp() {
         guard let helpURL = URL(string: BuildSettings.applicationHelpUrlString) else {
@@ -355,6 +355,18 @@ final class SideMenuCoordinator: NSObject, SideMenuCoordinatorType {
             Analytics.shared.exploringSpace = nil
         }
     }
+    
+    private func showInfoApp() {
+        guard let helpURL = URL(string: "https://qaim.me/aboutapp") else {
+            return
+        }
+
+        let safariViewController = SFSafariViewController(url: helpURL)
+
+        // Show in fullscreen to animate presentation along side menu dismiss
+        safariViewController.modalPresentationStyle = .fullScreen
+        self.sideMenuNavigationViewController.present(safariViewController, animated: true, completion: nil)
+    }
 
     // MARK: UserSessions management
     
@@ -382,9 +394,9 @@ extension SideMenuCoordinator: SideMenuViewModelCoordinatorDelegate {
         case .settings:
             self.showSettings()
         case .help:
-            self.showHelp()
-        case .feedback:
-            self.showBugReport()
+            self.showInfoApp()
+//        case .feedback:
+//            self.showBugReport()
         }
         
         self.delegate?.sideMenuCoordinator(self, didTapMenuItem: menuItem, fromSourceView: sourceView)

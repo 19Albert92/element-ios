@@ -144,7 +144,7 @@
 "contacts_address_book_matrix_users_toggle" = "Matrix利用者のみ";
 "contacts_address_book_no_contact" = "端末内電話帳に連絡先がありません";
 "contacts_address_book_permission_required" = "端末内電話帳へのアクセス権限が必要です";
-"contacts_address_book_permission_denied" = "端末の電話帳をElementアプリが読み取ることは許可されていません";
+"contacts_address_book_permission_denied" = "端末の電話帳をQaimアプリが読み取ることは許可されていません";
 "contacts_user_directory_section" = "利用者一覧";
 "contacts_user_directory_offline_section" = "利用者一覧（オフライン）";
 // Chat participants
@@ -289,7 +289,7 @@
 "settings_show_decrypted_content" = "復号化された文章を表示";
 "settings_global_settings_info" = "あなたの%@ webクライアント上で、全体の通知設定が可能です";
 "settings_pin_rooms_with_missed_notif" = "逃した通知があるルームを固定";
-"settings_callkit_info" = "画面がロックされているときに着信がありました。Elementの着信はシステムの通話履歴で確認できます。iCloudが有効になっている場合、この通話履歴はAppleと共有されます。";
+"settings_callkit_info" = "画面がロックされているときに着信がありました。Qaimの着信はシステムの通話履歴で確認できます。iCloudが有効になっている場合、この通話履歴はAppleと共有されます。";
 "settings_ui_language" = "言語";
 "settings_ui_theme" = "外観";
 "settings_ui_theme_auto" = "自動";
@@ -432,14 +432,14 @@
 // Crash report
 "google_analytics_use_prompt" = "匿名の誤動作報告と使用状況データを自動的に報告して%@の改善に役立てますか？";
 // Crypto
-"e2e_enabling_on_app_update" = "Elementはエンドツーエンド暗号化をサポートするようになりましたが、有効にするには再びログインする必要があります。\n\nアプリの設定から再ログインできます。今すぐ、または後からでも構いません。";
+"e2e_enabling_on_app_update" = "Qaimはエンドツーエンド暗号化をサポートするようになりましたが、有効にするには再びログインする必要があります。\n\nアプリの設定から再ログインできます。今すぐ、または後からでも構いません。";
 "e2e_need_log_in_again" = "再度ログインして、このセッションのエンドツーエンド暗号鍵を生成し、公開鍵をホームサーバーに送信する必要があります。\nご迷惑をおかけしますが、ご了承ください。";
 // Bug report
 "bug_report_title" = "バグレポート";
 "bug_report_description" = "誤動作の内容と状況の説明をお願い致します。あなたは何をしましたか？何が起こると思いますか？実際何が起こったのですか？";
 "bug_crash_report_title" = "異常終了報告";
 "bug_crash_report_description" = "異常停止する前にあなたがしていたことを記してください:";
-"bug_report_logs_description" = "開発者が問題を診断するために、このElementのログがバグレポートと一緒に送信されます。上記文章のみを送信したい場合は以下のチェックを解除してください：";
+"bug_report_logs_description" = "開発者が問題を診断するために、このQaimのログがバグレポートと一緒に送信されます。上記文章のみを送信したい場合は以下のチェックを解除してください：";
 "bug_report_send_logs" = "ログを送信";
 "bug_report_send_screenshot" = "画面のスクリーンショット画像を送信";
 "bug_report_progress_zipping" = "ログを収集";
@@ -812,7 +812,7 @@
 // Manage session
 "manage_session_title" = "セッションを管理";
 "security_settings_user_password_description" = "アカウントのパスワードを入力して本人確認を行ってください";
-"security_settings_coming_soon" = "申し訳ありません。このアクションはElement iOSではまだ利用できません。他のMatrixクライアントを使って設定してください。将来的にはElement iOSでも実装される予定です。";
+"security_settings_coming_soon" = "申し訳ありません。このアクションはQaim iOSではまだ利用できません。他のMatrixクライアントを使って設定してください。将来的にはQaim iOSでも実装される予定です。";
 "security_settings_complete_security_alert_message" = "現在のセッションのセキュリティーを完了させる必要があります。";
 "security_settings_blacklist_unverified_devices_description" = "全てのセッションを認証して、信頼できるものとしてマークしメッセージを送信します。";
 "security_settings_blacklist_unverified_devices" = "信頼していないセッションにはメッセージを送信しない";
@@ -876,7 +876,7 @@
 "settings_security" = "セキュリティー";
 "settings_three_pids_management_information_part3" = "";
 "settings_three_pids_management_information_part2" = "ディスカバリー";
-"store_full_description" = "Elementはまったく新しいメッセンジャーアプリです。\n\n1. あなた自身がプライバシーをコントロールすることを可能にします。\n2. Matrixネットワークにいる誰とでもコミュニケーションできるだけでなく、Slackなどのアプリと連携すれば、他のネットワークともコミュニケーションを行うことができます。\n3. 広告、データマイニング、バックドア、ユーザーの囲い込みから、あなたを守ります。\n4. エンドツーエンド暗号化とクロス署名によってあなたを保護します。\n\nElementは分散型（非中央集権型）でオープンソースであるため、他のメッセンジャーアプリと完全に異なっています。\n\nElementでは、あなた自身がサーバーを運営することも、サーバーを選ぶこともできます。あなたのデータと会話に関するプライバシーや所有権は、あなた自身で管理できます。さらに、Elementは開かれたネットワークにアクセスするので、Elementのユーザー以外とも話すことができます。しかもきわめて安全です。\n\nElementはMatrixーーオープンな分散型通信の標準規格ーーで動作するため、これら全てを実現することができています。\n\nElementでは、どのサーバーを使用するかを、ご自身でElementのアプリから決めることができます。\n\n1. 開発者がホストする matrix.org のパブリックサーバーで無料アカウントを取得する。\n2. あなた自身がサーバーを運営し、アカウントを管理する。\n3. Element Matrix Servicesのホスティングプラットフォームに加入し、カスタムサーバー上でアカウントを作る。\n\nなぜElementを選ぶべきなのか？\n\n自分のデータを、自分で所有: データやメッセージを保管する場所を自分で決めることができます。データを所有しコントロールするのは、あなた自身です。データを解析したり第三者にデータを渡したりする巨大IT企業ではありません。\n\nオープンなメッセージングとコラボレーション: Matrixネットワーク上の誰とでも、相手がElementや他のMatrixアプリを使っているか、さらにはSlack、IRC、XMPPのような他のメッセージングシステムを使っているかに関わらず、チャットをすることができます。\n\n非常に安全: 本物のエンド・ツー・エンドの暗号化（会話に参加している人だけがメッセージを復号化できます）と、会話参加者の真正性を確認するためのクロス署名を行います。\n\n包括的なコミュニケーション: メッセージング、音声およびビデオ通話、ファイル共有、画面共有、その他多くの機能統合、ボット、ウィジェットを提供します。ルームやコミュニティーを立ち上げて連絡を取り合い、物事をスムーズに成し遂げましょう。\n\nいつでも、どこにいても: 全ての端末とウェブ（https://app.element.io）でメッセージの履歴が同期されるため、どこにいても連絡を取ることができます。";
+"store_full_description" = "Qaimはまったく新しいメッセンジャーアプリです。\n\n1. あなた自身がプライバシーをコントロールすることを可能にします。\n2. Matrixネットワークにいる誰とでもコミュニケーションできるだけでなく、Slackなどのアプリと連携すれば、他のネットワークともコミュニケーションを行うことができます。\n3. 広告、データマイニング、バックドア、ユーザーの囲い込みから、あなたを守ります。\n4. エンドツーエンド暗号化とクロス署名によってあなたを保護します。\n\nQaimは分散型（非中央集権型）でオープンソースであるため、他のメッセンジャーアプリと完全に異なっています。\n\nQaimでは、あなた自身がサーバーを運営することも、サーバーを選ぶこともできます。あなたのデータと会話に関するプライバシーや所有権は、あなた自身で管理できます。さらに、Qaimは開かれたネットワークにアクセスするので、Qaimのユーザー以外とも話すことができます。しかもきわめて安全です。\n\nQaimはMatrixーーオープンな分散型通信の標準規格ーーで動作するため、これら全てを実現することができています。\n\nQaimでは、どのサーバーを使用するかを、ご自身でQaimのアプリから決めることができます。\n\n1. 開発者がホストする matrix.org のパブリックサーバーで無料アカウントを取得する。\n2. あなた自身がサーバーを運営し、アカウントを管理する。\n3. Qaim Matrix Servicesのホスティングプラットフォームに加入し、カスタムサーバー上でアカウントを作る。\n\nなぜQaimを選ぶべきなのか？\n\n自分のデータを、自分で所有: データやメッセージを保管する場所を自分で決めることができます。データを所有しコントロールするのは、あなた自身です。データを解析したり第三者にデータを渡したりする巨大IT企業ではありません。\n\nオープンなメッセージングとコラボレーション: Matrixネットワーク上の誰とでも、相手がQaimや他のMatrixアプリを使っているか、さらにはSlack、IRC、XMPPのような他のメッセージングシステムを使っているかに関わらず、チャットをすることができます。\n\n非常に安全: 本物のエンド・ツー・エンドの暗号化（会話に参加している人だけがメッセージを復号化できます）と、会話参加者の真正性を確認するためのクロス署名を行います。\n\n包括的なコミュニケーション: メッセージング、音声およびビデオ通話、ファイル共有、画面共有、その他多くの機能統合、ボット、ウィジェットを提供します。ルームやコミュニティーを立ち上げて連絡を取り合い、物事をスムーズに成し遂げましょう。\n\nいつでも、どこにいても: 全ての端末とウェブ（https://app.Qaim.io）でメッセージの履歴が同期されるため、どこにいても連絡を取ることができます。";
 "user_verification_session_details_additional_information_untrusted_other_user" = "ユーザーがこのセッションを信頼するまでは、セッションとの間で送受信されるメッセージには警告が表示されます。また、手動で認証することもできます。";
 "user_verification_session_details_information_untrusted_other_user" = " 新しいセッションを使ってサインインしました:";
 "user_verification_session_details_information_untrusted_current_user" = "このセッションを認証することで、信頼できるものとしてマークし、暗号化されたメッセージへのアクセスを許可します。";
@@ -1602,10 +1602,8 @@
 "side_menu_action_invite_friends" = "招待する";
 "call_more_actions_change_audio_device" = "オーディオデバイスを変更";
 "call_more_actions_dialpad" = "ダイヤルパッド";
-"onboarding_splash_login_button_title" = "既にアカウントを持っています";
 
 // Onboarding
-"onboarding_splash_register_button_title" = "アカウントを作成";
 "notice_room_created_by_you_for_dm" = "参加しました";
 "notice_room_created_for_dm" = "%@が参加しました";
 "onboarding_use_case_existing_server_button" = "サーバーに接続";
@@ -1614,3 +1612,14 @@
 "settings_confirm_media_size_description" = "この機能をオンにすると、画像や動画をどのサイズで送信するか確認する画面が表示されます。";
 "settings_contacts_enable_sync_description" = "IDサーバーを使用して連絡先を探すと同時に、連絡先があなたを探せるようにします。";
 "home_syncing" = "同期中";
+
+"onboarding_splash_register_button_title"="次へ";
+"onboarding_splash_login_button_title"="私はすでにアカウントを持っています";
+"onboarding_splash_page_1_title"="安全なチャット。";
+"onboarding_splash_page_1_message"="自宅での対面通信と同じレベルのプライバシーを提供する安全で独立した通信。";
+"onboarding_splash_page_2_title"="それはあなた次第です。";
+"onboarding_splash_page_2_message" = "会話を行う場所を選択して、制御と独立性を確保します。マトリックスを介したコミュニケーション。";
+"onboarding_splash_page_3_title"="セキュアメッセージング。";
+"onboarding_splash_page_3_message"="エンドツーエンドの暗号化と電話番号は必要ありません。広告やデータ収集は必要ありません。";
+"onboarding_splash_page_4_title_no_pun"="チームのメッセージ。";
+"onboarding_splash_page_4_message"="Qaimは仕事に最適です。世界で最も安全な組織から信頼されています。";

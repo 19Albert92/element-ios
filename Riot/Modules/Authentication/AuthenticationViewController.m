@@ -873,7 +873,12 @@ static const CGFloat kAuthInputContainerViewMinHeightConstraintConstant = 150.0;
         else
         {
             // Update UI to reset password
-            self.authType = MXKAuthenticationTypeForgotPassword;
+//            self.authType = MXKAuthenticationTypeForgotPassword;
+            UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+
+            RememberViewController *rememberViewController = (RememberViewController *)[storyboard  instantiateViewControllerWithIdentifier:@"RememberViewController"];
+
+            [self.navigationController pushViewController:rememberViewController animated:YES];
         }
     }
     else if (sender == self.navigationItem.rightBarButtonItem)
@@ -925,6 +930,8 @@ static const CGFloat kAuthInputContainerViewMinHeightConstraintConstant = 150.0;
         // Except if there is an external set of parameters defined to perform a registration.
         if (self.authType == MXKAuthenticationTypeRegister && !self.externalRegistrationParameters)
         {
+            
+            
             // Sanity check
             if ([self.authInputsView isKindOfClass:AuthInputsView.class])
             {
@@ -1351,6 +1358,7 @@ static const CGFloat kAuthInputContainerViewMinHeightConstraintConstant = 150.0;
     // Create DM with Riot-bot on new account creation.
     if (self.authType == MXKAuthenticationTypeRegister && botCreationEnabled)
     {
+        
         MXRoomCreationParameters *roomCreationParameters = [MXRoomCreationParameters parametersForDirectRoomWithUser:@"@riot-bot:matrix.org"];
         [session createRoomWithParameters:roomCreationParameters success:nil failure:^(NSError *error) {
             MXLogDebug(@"[AuthenticationVC] Create chat with riot-bot failed");
@@ -1569,6 +1577,7 @@ static const CGFloat kAuthInputContainerViewMinHeightConstraintConstant = 150.0;
             showSocialLoginView = NO;
             break;
         case MXKAuthenticationTypeRegister:
+            NSLog(@"this is registration pages 1");
             socialLoginButtonMode = SocialLoginButtonModeSignUp;
             break;
         case MXKAuthenticationTypeLogin:

@@ -89,6 +89,11 @@
 {
     return (FavouritesViewController*)[self viewControllerForClass:FavouritesViewController.class];
 }
+//ai
+//- (BotsViewController *)botsViewController
+//{
+//    return (BotsViewController*)[self viewControllerForClass:BotsViewController.class];
+//}
 
 - (PeopleViewController *)peopleViewController
 {
@@ -345,6 +350,8 @@
         [self.favouritesViewController displayList:recentsDataSource];
         [self.peopleViewController displayList:recentsDataSource];
         [self.roomsViewController displayList:recentsDataSource];
+        //ai
+//        [self.botsViewController displayList:recentsDataSource];
         
         // Restore the right delegate of the shared recent data source.
         id<MXKDataSourceDelegate> recentsDataSourceDelegate = self.homeViewController;
@@ -368,7 +375,12 @@
                 recentsDataSourceDelegate = self.roomsViewController;
                 recentsDataSourceMode = RecentsDataSourceModeRooms;
                 break;
-                
+                //ai
+//            case TABBAR_AI:
+//                recentsDataSourceDelegate = self.botsViewController;
+//                recentsDataSourceMode = RecentsDataSourceModeBot;
+//                break;
+//
             default:
                 break;
         }
@@ -459,6 +471,8 @@
         [self.favouritesViewController displayList:nil];
         [self.peopleViewController displayList:nil];
         [self.roomsViewController displayList:nil];
+        //ai
+//        [self.botsViewController displayList:nil];
         
         [recentsDataSource destroy];
         recentsDataSource = nil;
@@ -818,12 +832,29 @@
 - (void)refreshTabBarBadges
 {
     // Use a middle dot to signal missed notif in favourites
+//    favourite
     if (RiotSettings.shared.homeScreenShowFavouritesTab)
     {
         [self setMissedDiscussionsMark:(recentsDataSource.favoriteMissedDiscussionsCount.numberOfNotified ? @"\u00B7": nil)
                           onTabBarItem:TABBAR_FAVOURITES_INDEX
                         withBadgeColor:(recentsDataSource.favoriteMissedDiscussionsCount.hasHighlight ? ThemeService.shared.theme.noticeColor : ThemeService.shared.theme.noticeSecondaryColor)];
     }
+    //ai
+//    if (RiotSettings.shared.homeScreenShowAIBot)
+//    {
+//        if (recentsDataSource.directMissedDiscussionsCount.hasUnsent)
+//        {
+//            [self setBadgeValue:@"!"
+//                               onTabBarItem:TABBAR_AI
+//                             withBadgeColor:ThemeService.shared.theme.noticeColor];
+//        }
+//        else
+//        {
+//            [self setMissedDiscussionsCount:recentsDataSource.directMissedDiscussionsCount.numberOfNotified
+//                               onTabBarItem:TABBAR_AI
+//                             withBadgeColor:(recentsDataSource.directMissedDiscussionsCount.hasHighlight ? ThemeService.shared.theme.noticeColor : ThemeService.shared.theme.noticeSecondaryColor)];
+//        }
+//    }
     
     // Update the badge on People and Rooms tabs
     if (RiotSettings.shared.homeScreenShowPeopleTab)
@@ -1093,6 +1124,10 @@
         {
             [self.favouritesViewController scrollToNextRoomWithMissedNotifications];
         }
+//        else if (item.tag == TABBAR_AI)
+//        {
+//            [self.botsViewController scrollToNextRoomWithMissedNotifications];
+//        }
     }
 }
 

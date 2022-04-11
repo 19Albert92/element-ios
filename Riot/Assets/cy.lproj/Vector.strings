@@ -1,6 +1,20 @@
 // String for App Store
 "store_short_description" = "Sgwrs/VoIP datgonoledig a diogel";
-"store_full_description" = "Cyfathrebu, eich ffordd eich hyn.\n\nAp sgwrsio, o dan eich rheolaeth ac yn hollol hyblyg. Mae Element yn gadael ichi gyfathrebu'r ffordd rydych chi ei eisiau. Wedi'i wneud ar gyfer [matrix] - y safon ar gyfer cyfathrebu agored, datganoledig.\n\nSicrhewch gyfrif matrix.org am ddim, mynnwch eich gweinydd eich hun yn https://ems.element.io, neu defnyddiwch weinydd Matrix arall.\n\nPam dewis Element?\n\nCYFATHREBU LLAWN: Adeiladwch ystafelloedd o amgylch eich timau, eich ffrindiau, eich cymuned - sut bynnag yr ydych chi'n hoffi! Sgwrsiwch, rhannwch ffeiliau, ychwanegwch teclynnau a gwnewch galwadau llais a fideo - i gyd yn rhad ac am ddim.\n\nINTEGREIDDIAU GRYMUS: Defnyddiwch Element gyda'r offer rydych chi'n eu hadnabod ac yn eu caru. Gyda Element gallwch hyd yn oed sgwrsio â defnyddwyr a grwpiau ar apiau sgwrsio eraill.\n\nPREIFAT A DIOGEL: Cadwch eich sgyrsiau yn gyfrinachol. Mae amgryptio o'r dechrau i'r diwedd o'r radd flaenaf yn sicrhau bod cyfathrebu preifat yn aros yn breifat.\n\nAGORED, NID YN GAËDIG: Ffynhonnell agor, ac wedi'i adeiladu ar Matrix. ––Byddwch yn berchen ar eich data eich hun trwy gynnal eich gweinydd eich hun, neu ddewis un rydych chi'n ymddiried ynddo.\n\nBOB MAN YDYCH CHI: Cadwch mewn cysylltiad ble bynnag yr ydych â hanes negeseuon wedi'i gydamseru'n llawn ar draws eich holl ddyfeisiau ac ar-lein yn https://app.element.io.";
+"store_full_description" = "Cyfathrebu, eich ffordd eich hyn.\n\nAp sgwrsio, o dan eich rheolaeth ac yn hollol hyblyg. Mae Qaim yn gadael ichi gyfathrebu'r ffordd rydych chi ei eisiau. Wedi'i wneud ar gyfer [matrix] - y safon ar gyfer cyfathrebu agored, datganoledig.\n\nSicrhewch gyfrif matrix.org am ddim, mynnwch eich gweinydd eich hun yn https://ems.Qaim.io, neu defnyddiwch weinydd Matrix arall.\n\nPam dewis Qaim?\n\nCYFATHREBU LLAWN: Adeiladwch ystafelloedd o amgylch eich timau, eich ffrindiau, eich cymuned - sut bynnag yr ydych chi'n hoffi! Sgwrsiwch, rhannwch ffeiliau, ychwanegwch teclynnau a gwnewch galwadau llais a fideo - i gyd yn rhad ac am ddim.\n\nINTEGREIDDIAU GRYMUS: Defnyddiwch Qaim gyda'r offer rydych chi'n eu hadnabod ac yn eu caru. Gyda Qaim gallwch hyd yn oed sgwrsio â defnyddwyr a grwpiau ar apiau sgwrsio eraill.\n\nPREIFAT A DIOGEL: Cadwch eich sgyrsiau yn gyfrinachol. Mae amgryptio o'r dechrau i'r diwedd o'r radd flaenaf yn sicrhau bod cyfathrebu preifat yn aros yn breifat.\n\nAGORED, NID YN GAËDIG: Ffynhonnell agor, ac wedi'i adeiladu ar Matrix. ––Byddwch yn berchen ar eich data eich hun trwy gynnal eich gweinydd eich hun, neu ddewis un rydych chi'n ymddiried ynddo.\n\nBOB MAN YDYCH CHI: Cadwch mewn cysylltiad ble bynnag yr ydych â hanes negeseuon wedi'i gydamseru'n llawn ar draws eich holl ddyfeisiau ac ar-lein yn https://app.Qaim.io.";
+
+// Onboarding
+//"onboarding_splash_register_button_title" = "Create account";
+"onboarding_splash_register_button_title" = "Nesaf";
+"onboarding_splash_login_button_title" = "Mae gennyf gyfrif yn barod";
+"onboarding_splash_page_1_title" = "Yn berchen ar eich sgyrsiau.";
+" onboarding_splash_page_1_message " = "Cyfathrebu diogel ac annibynnol sy'n rhoi'r un lefel o breifatrwydd i chi â sgwrs wyneb yn wyneb yn eich cartref eich hun.";
+"onboarding_splash_page_2_title" = "Chi sy'n rheoli.";
+" onboarding_splash_page_2_message " = "Dewiswch ble mae eich sgyrsiau yn cael eu cadw, gan roi rheolaeth ac annibyniaeth i chi. Wedi'i gysylltu drwy Matrics.";
+"onboarding_splash_page_3_title" = "Negeseuon diogel.";
+"onboarding_splash_page_3_message" = "Wedi amgryptio o'r dechrau i'r diwedd a dim angen rhif ffôn. Dim hysbysebion na chloddio data.";
+"onboarding_splash_page_4_title_no_pun" = "Negeseuon ar gyfer eich tîm.";
+"onboarding_splash_page_4_message" = "Mae Qaim hefyd yn wych ar gyfer y gweithle. Mae sefydliadau mwyaf diogel y byd yn ymddiried ynddo.";
+
 // Titles
 "title_home" = "Hafan";
 "title_favourites" = "Ffefrynnau";

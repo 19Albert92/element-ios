@@ -28,7 +28,7 @@
 "leave" = "Opustiť";
 "start" = "Začať";
 "store_promotional_text" = "Aplikácia na chatovanie a spoluprácu s ochranou súkromia v otvorenej sieti. Decentralizovaná, aby ste ju mali pod kontrolou. Žiadne dolovanie údajov, žiadne zadné vrátka ani prístup tretích strán.";
-"store_full_description" = "Element je nový typ aplikácie na posielanie správ a spoluprácu, ktorá:\n\n1. vám dáva kontrolu nad zachovaním vášho súkromia\n2. Umožňuje vám komunikovať s kýmkoľvek v sieti Matrix, a dokonca aj mimo nej vďaka integrácii s aplikáciami, ako je Slack\n3. Chráni vás pred reklamou, získavaním údajov, zadnými vrátkami a uzavretým ekosystémom.\n4. Zabezpečuje vás prostredníctvom end-to-end šifrovania s krížovým podpisovaním na overenie ostatných\n\nElement sa úplne líši od ostatných aplikácií na zasielanie správ a spoluprácu, pretože je decentralizovaný a má otvorený zdrojový kód.\n\nElement vám umožňuje, aby ste sa sami hosťovali - alebo si vybrali hosting - takže máte súkromie, vlastníctvo a kontrolu nad svojimi údajmi a konverzáciami. Poskytuje vám prístup k otvorenej sieti; takže nie ste odkázaní len na rozhovory s inými používateľmi aplikácie Element. A je veľmi bezpečný.\n\nElement toto všetko dokáže, pretože funguje na Matrixe - štandarde pre otvorenú, decentralizovanú komunikáciu. \n\nElement vám dáva kontrolu tým, že vám umožňuje vybrať si, kto bude hostiť vaše konverzácie. V aplikácii Element si môžete vybrať, či chcete hosťovať rôznymi spôsobmi:\n\n1. Získajte bezplatný účet na verejnom serveri matrix.org\n2. Vlastný hosting účtu spustením servera na vlastnom hardvéri.\n3. Zaregistrujte si účet na vlastnom serveri jednoduchým predplatením hostingovej platformy Element Matrix Services.\n\nPrečo si vybrať práve Element?\n\nVLASTNÍTE SVOJE DÁTA: Vy rozhodujete o tom, kde budú vaše dáta a správy uložené. Vlastníte ich a máte nad nimi kontrolu, nie nejaká MEGAKORPORÁCIA, ktorá vaše údaje doluje alebo poskytuje prístup tretím stranám.\n\nOTVORENÁ KONVERZÁCIA A SPOLUPRÁCA: Môžete chatovať s kýmkoľvek iným v sieti Matrix, či už používa aplikáciu Element alebo inú aplikáciu Matrix, a dokonca aj vtedy, ak používa iný systém správ typu Slack, IRC alebo XMPP.\n\nSUPER-BEZPEČNÉ: Skutočné end-to-end šifrovanie (správy môžu dešifrovať len účastníci konverzácie) a krížové podpisovanie na overenie zariadení účastníkov konverzácie.\n\nKOMPLETNÁ KOMUNIKÁCIA: Správy, hlasové a videohovory, zdieľanie súborov, zdieľanie obrazovky a celý rad integrácií, botov a widgetov. Vytvárajte miestnosti, komunity, zostaňte v kontakte a vybavujte veci.\n\nKDEKOĽVEK STE: Zostaňte v kontakte, nech ste kdekoľvek, s plne synchronizovanou históriou správ vo všetkých zariadeniach a na webe na https://element.io/app.";
+"store_full_description" = "Qaim je nový typ aplikácie na posielanie správ a spoluprácu, ktorá:\n\n1. vám dáva kontrolu nad zachovaním vášho súkromia\n2. Umožňuje vám komunikovať s kýmkoľvek v sieti Matrix, a dokonca aj mimo nej vďaka integrácii s aplikáciami, ako je Slack\n3. Chráni vás pred reklamou, získavaním údajov, zadnými vrátkami a uzavretým ekosystémom.\n4. Zabezpečuje vás prostredníctvom end-to-end šifrovania s krížovým podpisovaním na overenie ostatných\n\nQaim sa úplne líši od ostatných aplikácií na zasielanie správ a spoluprácu, pretože je decentralizovaný a má otvorený zdrojový kód.\n\nQaim vám umožňuje, aby ste sa sami hosťovali - alebo si vybrali hosting - takže máte súkromie, vlastníctvo a kontrolu nad svojimi údajmi a konverzáciami. Poskytuje vám prístup k otvorenej sieti; takže nie ste odkázaní len na rozhovory s inými používateľmi aplikácie Qaim. A je veľmi bezpečný.\n\nQaim toto všetko dokáže, pretože funguje na Matrixe - štandarde pre otvorenú, decentralizovanú komunikáciu. \n\nQaim vám dáva kontrolu tým, že vám umožňuje vybrať si, kto bude hostiť vaše konverzácie. V aplikácii Qaim si môžete vybrať, či chcete hosťovať rôznymi spôsobmi:\n\n1. Získajte bezplatný účet na verejnom serveri matrix.org\n2. Vlastný hosting účtu spustením servera na vlastnom hardvéri.\n3. Zaregistrujte si účet na vlastnom serveri jednoduchým predplatením hostingovej platformy Qaim Matrix Services.\n\nPrečo si vybrať práve Qaim?\n\nVLASTNÍTE SVOJE DÁTA: Vy rozhodujete o tom, kde budú vaše dáta a správy uložené. Vlastníte ich a máte nad nimi kontrolu, nie nejaká MEGAKORPORÁCIA, ktorá vaše údaje doluje alebo poskytuje prístup tretím stranám.\n\nOTVORENÁ KONVERZÁCIA A SPOLUPRÁCA: Môžete chatovať s kýmkoľvek iným v sieti Matrix, či už používa aplikáciu Qaim alebo inú aplikáciu Matrix, a dokonca aj vtedy, ak používa iný systém správ typu Slack, IRC alebo XMPP.\n\nSUPER-BEZPEČNÉ: Skutočné end-to-end šifrovanie (správy môžu dešifrovať len účastníci konverzácie) a krížové podpisovanie na overenie zariadení účastníkov konverzácie.\n\nKOMPLETNÁ KOMUNIKÁCIA: Správy, hlasové a videohovory, zdieľanie súborov, zdieľanie obrazovky a celý rad integrácií, botov a widgetov. Vytvárajte miestnosti, komunity, zostaňte v kontakte a vybavujte veci.\n\nKDEKOĽVEK STE: Zostaňte v kontakte, nech ste kdekoľvek, s plne synchronizovanou históriou správ vo všetkých zariadeniach a na webe na https://Qaim.io/app.";
 "create" = "Vytvoriť";
 "continue" = "Pokračovať";
 "back" = "Späť";
@@ -1331,7 +1331,7 @@
 
 // MARK: - Major update
 
-"major_update_title" = "Riot je teraz %@";
+"major_update_title" = "%@";
 
 // MARK: - Cross-signing
 
@@ -1653,19 +1653,20 @@
 "location_sharing_settings_toggle_title" = "Povoliť zdieľanie polohy";
 
 // Onboarding
-"onboarding_splash_register_button_title" = "Vytvoriť účet";
-"onboarding_splash_login_button_title" = "Už mám účet";
-"onboarding_splash_page_1_title" = "Vlastnite svoje konverzácie.";
-"onboarding_splash_page_1_message" = "Bezpečná a nezávislá komunikácia, ktorá vám poskytuje rovnakú úroveň súkromia ako rozhovor zoči-voči vo vašom vlastnom dome.";
-"onboarding_splash_page_2_title" = "Vy máte všetko pod kontrolou.";
-"onboarding_splash_page_2_message" = "Vyberte si, kde budú vaše rozhovory uložené, a získajte tak kontrolu a nezávislosť. Pripojené cez Matrix.";
-"onboarding_splash_page_3_title" = "Zabezpečené zasielanie správ.";
-"onboarding_splash_page_3_message" = "End-to-end šifrovanie a bez potreby telefónneho čísla. Žiadne reklamy ani zneužívanie údajov.";
-"onboarding_splash_page_4_title_no_pun" = "Zasielanie správ pre váš tím.";
-"onboarding_splash_page_4_message" = "Element je skvelý aj na pracovisku. Dôverujú mu najbezpečnejšie organizácie na svete.";
 "settings_enable_room_message_bubbles" = "Správy v bublinách";
 "share_extension_failed_to_encrypt" = "Nepodarilo sa odoslať. Skontrolujte v hlavnej aplikácii nastavenia šifrovania pre túto miestnosť";
 "service_terms_modal_policy_checkbox_accessibility_hint" = "Označte, či chcete prijať %@";
+
+"onboarding_splash_register_button_title" = "Ďalej";
+"onboarding_splash_login_button_title" = "Už mám účet";
+"onboarding_splash_page_1_title" = "Bezpečný rozhovor.";
+"onboarding_splash_page_1_message" = "Bezpečná a nezávislá komunikácia, ktorá poskytuje rovnakú úroveň súkromia ako osobná komunikácia u vás doma.";
+"onboarding_splash_page_2_title" = "Je to na tebe.";
+"onboarding_splash_page_2_message" = "Vyberte si, kde budete konverzovať, čím získate kontrolu a nezávislosť. Komunikácia cez Matrix.";
+"onboarding_splash_page_3_title" = "Bezpečné posielanie správ.";
+"onboarding_splash_page_3_message" = "End-to-end šifrovanie a nie je potrebné žiadne telefónne číslo. Žiadne reklamy ani zber dát.";
+"onboarding_splash_page_4_title_no_pun" = "Správy pre váš tím.";
+"onboarding_splash_page_4_message" = "Qaim je pre túto prácu skvelý. Dôverujú mu najbezpečnejšie organizácie na svete.";
 
 // Intro
 

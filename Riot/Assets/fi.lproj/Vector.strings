@@ -46,7 +46,7 @@
 // Directory
 "directory_title" = "Luettelo";
 "directory_server_picker_title" = "Valitse luettelo";
-"major_update_title" = "Riot on nyt Element";
+"major_update_title" = "Qaim";
 "major_update_learn_more_action" = "Lue lisää";
 "major_update_done_action" = "Selvä";
 "room_member_power_level_short_moderator" = "Valvoja";
@@ -94,6 +94,20 @@
 "notice_location_attachment" = "sijaintiliite";
 "notice_file_attachment" = "tiedostoliite";
 "notice_invalid_attachment" = "virheellinen liite";
+
+// Onboarding
+//"onboarding_splash_register_button_title" = "Create account";
+"onboarding_splash_register_button_title" = "Seuraava";
+"onboarding_splash_login_button_title" = "Minulla on jo tili";
+"onboarding_splash_page_1_title" = "Omista keskustelusi.";
+"onboarding_splash_page_1_message" = "Turvallinen ja riippumaton viestintä, joka antaa sinulle samantasoisen yksityisyyden kuin kasvokkain käytävä keskustelu omassa kodissasi.";
+"onboarding_splash_page_2_title" = "Sinä hallitset.";
+"onboarding_splash_page_2_message" = "Valitse, missä keskustelusi säilytetään, mikä antaa sinulle hallinnan ja riippumattomuuden. Yhdistetty Matrixin kautta.";
+"onboarding_splash_page_3_title" = "Suojattu viestintä.";
+"onboarding_splash_page_3_message" = "Päästä päähän salattu, eikä puhelinnumeroa tarvita. Ei mainoksia tai tiedonlouhintaa.";
+"onboarding_splash_page_4_title_no_pun" = "Viestiä tiimillesi.";
+"onboarding_splash_page_4_message" = "Qaim sopii erinomaisesti myös työpaikalle. Maailman turvallisimmat organisaatiot luottavat siihen.";
+
 // room display name
 "room_displayname_empty_room" = "Tyhjä huone";
 "room_displayname_two_members" = "%@ ja %@";

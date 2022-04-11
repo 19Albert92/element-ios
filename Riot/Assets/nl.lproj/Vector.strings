@@ -562,7 +562,7 @@
 "room_message_reply_to_short_placeholder" = "Stuur een antwoord…";
 // String for App Store
 "store_short_description" = "Veilig en gedecentraliseerd chatten en bellen";
-"store_full_description" = "Element is een nieuw type messenger en samenwerkings app die:\n\n1. U de controle geeft om uw privacy te behouden\n2. U laat communiceren met iedereen in het Matrix-netwerk, en zelfs daarbuiten door integratie met apps zoals Slack\n3. Beschermt u tegen reclame, datamining, achterdeurtjes en ommuurde netwerken\n4. Beveiligt u door eind-tot-eind versleuteling, met kruislings ondertekenen om anderen te verifiëren\n\nElement is compleet anders dan andere messengers en samenwerkings-apps, omdat het gedecentraliseerd en open source is.\n\nMet Element kunt u zelf hosten - of een host kiezen - zodat u privacy, eigendom en controle heeft over uw gegevens en gesprekken. Het geeft u toegang tot een open netwerk; u zit dus niet vast aan het praten met alleen andere Element-gebruikers. En het is zeer veilig.\n\nElement is hiertoe in staat omdat het werkt op basis van Matrix - de standaard voor open, gedecentraliseerde communicatie. \n\nElement geeft u de controle door u te laten kiezen wie uw gesprekken host. Vanuit de Element app kunt u kiezen om op verschillende manieren te hosten:\n\n1. Neem een gratis account op de publieke server matrix.org\n2. Host het zelf, uw account door draait op uw eigen server\n3. Laat ons het hosten, meld u aan voor een account op een aangepaste server bij het Element Matrix Services hosting platform\n\nWaarom kiest u voor Element?\n\nEIGENAAR VAN UW GEGEVENS: U bepaalt waar uw gegevens en berichten worden bewaard. U bent de eigenaar en heeft de controle, niet een of andere MEGACORP die uw gegevens mijnt of toegang geeft aan derden.\n\nOPEN MESSAGING EN SAMENWERKING: U kunt met iedereen in het Matrix-netwerk chatten, of ze nu Element of een andere Matrix-app gebruiken, en zelfs als ze een ander messaging-systeem gebruiken zoals Slack, IRC of XMPP.\n\nSUPER-VEILIG: Echte eind-tot-eind versleuteling (alleen degenen in de conversatie kunnen berichten ontsleutelen), en kruislings ondertekenen om de apparaten van gespreksdeelnemers te verifiëren.\n\nCOMPLETE COMMUNICATIE: Berichten, spraak- en videogesprekken, bestandsdeling, schermdeling en een heleboel integraties, bots en widgets. Bouw kamers, Spaces, blijf in contact en krijg het gedaan.\n\nOVERAL WAAR U BENT: Blijf in contact waar u ook bent met volledig gesynchroniseerde berichtgeschiedenis op al uw apparaten en op het web op https://element.io/app.";
+"store_full_description" = "Qaim is een nieuw type messenger en samenwerkings app die:\n\n1. U de controle geeft om uw privacy te behouden\n2. U laat communiceren met iedereen in het Matrix-netwerk, en zelfs daarbuiten door integratie met apps zoals Slack\n3. Beschermt u tegen reclame, datamining, achterdeurtjes en ommuurde netwerken\n4. Beveiligt u door eind-tot-eind versleuteling, met kruislings ondertekenen om anderen te verifiëren\n\nQaim is compleet anders dan andere messengers en samenwerkings-apps, omdat het gedecentraliseerd en open source is.\n\nMet Qaim kunt u zelf hosten - of een host kiezen - zodat u privacy, eigendom en controle heeft over uw gegevens en gesprekken. Het geeft u toegang tot een open netwerk; u zit dus niet vast aan het praten met alleen andere Qaim-gebruikers. En het is zeer veilig.\n\nQaim is hiertoe in staat omdat het werkt op basis van Matrix - de standaard voor open, gedecentraliseerde communicatie. \n\nQaim geeft u de controle door u te laten kiezen wie uw gesprekken host. Vanuit de Qaim app kunt u kiezen om op verschillende manieren te hosten:\n\n1. Neem een gratis account op de publieke server matrix.org\n2. Host het zelf, uw account door draait op uw eigen server\n3. Laat ons het hosten, meld u aan voor een account op een aangepaste server bij het Qaim Matrix Services hosting platform\n\nWaarom kiest u voor Qaim?\n\nEIGENAAR VAN UW GEGEVENS: U bepaalt waar uw gegevens en berichten worden bewaard. U bent de eigenaar en heeft de controle, niet een of andere MEGACORP die uw gegevens mijnt of toegang geeft aan derden.\n\nOPEN MESSAGING EN SAMENWERKING: U kunt met iedereen in het Matrix-netwerk chatten, of ze nu Qaim of een andere Matrix-app gebruiken, en zelfs als ze een ander messaging-systeem gebruiken zoals Slack, IRC of XMPP.\n\nSUPER-VEILIG: Echte eind-tot-eind versleuteling (alleen degenen in de conversatie kunnen berichten ontsleutelen), en kruislings ondertekenen om de apparaten van gespreksdeelnemers te verifiëren.\n\nCOMPLETE COMMUNICATIE: Berichten, spraak- en videogesprekken, bestandsdeling, schermdeling en een heleboel integraties, bots en widgets. Bouw kamers, Spaces, blijf in contact en krijg het gedaan.\n\nOVERAL WAAR U BENT: Blijf in contact waar u ook bent met volledig gesynchroniseerde berichtgeschiedenis op al uw apparaten en op het web op https://Qaim.io/app.";
 "auth_login_single_sign_on" = "Aanmelden met enkele aanmelding";
 "auth_accept_policies" = "Lees het beleid van deze homeserver en kies om te aanvaarden:";
 "auth_autodiscover_invalid_response" = "Ongeldig server-ontdekkings-antwoord";
@@ -999,7 +999,7 @@
 
 // MARK: - Major update
 
-"major_update_title" = "Riot is nu %@";
+"major_update_title" = "%@";
 "cross_signing_setup_banner_subtitle" = "Verifieer uw andere apparaat gemakkelijker";
 
 // MARK: - Cross-signing
@@ -1705,18 +1705,19 @@
 "location_sharing_title" = "Locatie";
 "ok" = "OK";
 "settings_enable_room_message_bubbles" = "Bericht bubbels";
-"onboarding_splash_page_4_message" = "Element is ook zeer geschikt voor op de werkvloer. Het wordt vertrouwd door 's werelds veiligste organisaties.";
-"onboarding_splash_page_4_title_no_pun" = "Berichten voor uw team.";
-"onboarding_splash_page_3_message" = "End-to-end versleuteld en geen telefoonnummer vereist. Geen advertenties of datamining.";
-"onboarding_splash_page_3_title" = "Veilig berichtenverkeer.";
-"onboarding_splash_page_2_message" = "Kies waar u gesprekken worden gehouden, zodat u controle en onafhankelijkheid heeft. Verbonden via Matrix.";
-"onboarding_splash_page_2_title" = "U heeft de controle.";
-"onboarding_splash_page_1_message" = "Veilige en onafhankelijke communicatie die u dezelfde mate van privacy geeft als een persoonlijk gesprek in uw eigen huis.";
-"onboarding_splash_page_1_title" = "Word eigenaar van uw gesprekken.";
-"onboarding_splash_login_button_title" = "Ik heb al een account";
 
 // Onboarding
-"onboarding_splash_register_button_title" = "Account aanmaken";
+"onboarding_splash_register_button_title" = "Volgende";
+"onboarding_splash_login_button_title" = "Ik heb al een account";
+"onboarding_splash_page_1_title" = "Veilig chatten.";
+"onboarding_splash_page_1_message" = "Veilige en onafhankelijke communicatie die hetzelfde niveau van privacy biedt als persoonlijke communicatie in uw eigen huis.";
+"onboarding_splash_page_2_title" = "Het is aan jou.";
+"onboarding_splash_page_2_message" = "Kies waar u het gesprek wilt voeren, zodat u controle en onafhankelijkheid krijgt. Communicatie via de Matrix.";
+"onboarding_splash_page_3_title" = "Beveiligde berichten.";
+"onboarding_splash_page_3_message" = "End-to-end-codering en geen telefoonnummer vereist. Geen advertenties of gegevensverzameling.";
+"onboarding_splash_page_4_title_no_pun" = "Berichten voor uw team.";
+"onboarding_splash_page_4_message" = "Qaim is geweldig voor dit werk. Vertrouwd door de veiligste organisaties ter wereld.";
+
 "poll_edit_form_poll_type_closed_description" = "Resultaten worden pas onthuld als u de poll beëindigt";
 "poll_edit_form_poll_type_closed" = "Gesloten poll";
 "poll_edit_form_poll_type_open_description" = "Kiezers zien resultaten zodra ze hebben gestemd";

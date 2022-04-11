@@ -394,11 +394,11 @@
 "settings_version" = "نسخه %@";
 "settings_olm_version" = "نسخه olm %@";
 "settings_copyright" = "کپی رایت";
-"settings_copyright_url" = "https://riot.im/copyright";
+"settings_copyright_url" = "https://qaim.me/copyright";
 "settings_term_conditions" = "شرایط استفاده";
-"settings_term_conditions_url" = "https://riot.im/tac_apple";
+"settings_term_conditions_url" = "https://qaim.me/tac_apple";
 "settings_privacy_policy" = "سیاست های حریم خصوصی";
-"settings_privacy_policy_url" = "https://riot.im/privacy";
+"settings_privacy_policy_url" = "https://qaim.me/privacy";
 "settings_third_party_notices" = "Third-party اطلاعیه های";
 "settings_send_crash_report" = "ارسال اطلاعات توقف و یا داده ها";
 "settings_enable_rageshake" = "تکان دادن برای ارسال گزارش";
@@ -536,6 +536,17 @@
 "event_formatter_jitsi_widget_removed" = "VoIP کنفرانس حذف شده توسط:  %@";
 "event_formatter_rerequest_keys_part1_link" = "درخواست مجدد کلیدهای رمزنگاری";
 "event_formatter_rerequest_keys_part2" = " از دستگاه های دیگر";
+
+"onboarding_splash_register_button_title" = "بعدی";
+"onboarding_splash_login_button_title" = "من در حال حاضر یک حساب";
+//"onboarding_splash_page_1_title" = "رتباطات امن"؛
+"onboarding_splash_page_1_message" = "ارتباطات امن و مستقل، ارائه همان سطح از محرمانه بودن به عنوان در فرد در خانه شما.";
+"onboarding_splash_page_2_title" = "شما همه چیز را تحت کنترل است.";
+"onboarding_splash_page_2_message" = "انتخاب کنید که در آن مکالمات خود را ذخیره خواهد شد، که به شما کنترل و استقلال را. اتصال از طریق ماتریس.";
+"onboarding_splash_page_3_title" = "پیام امن.";
+"onboarding_splash_page_3_message" = "رمزگذاری پایان به پایان و بدون شماره تلفن مورد نیاز است. بدون تبلیغات و یا جمع آوری داده ها.";
+"onboarding_splash_page_4_title_no_pun" = "پیام برای تیم خود را.";
+"onboarding_splash_page_4_message" = "قیم برای این کار عالی است. او توسط سازمان های حفاظت شده ترین در جهان مورد اعتماد است.";
 
 // Others
 "or" = "یا";

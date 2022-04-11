@@ -244,7 +244,7 @@ final class TabBarCoordinator: NSObject, TabBarCoordinatorType {
         let wrapperViewController = HomeViewControllerWithBannerWrapperViewController(viewController: homeViewController)        
         return wrapperViewController
     }
-    
+
     private func createFavouritesViewController() -> FavouritesViewController {
         let favouritesViewController: FavouritesViewController = FavouritesViewController.instantiate()
         favouritesViewController.tabBarItem.tag = Int(TABBAR_FAVOURITES_INDEX)
@@ -252,6 +252,15 @@ final class TabBarCoordinator: NSObject, TabBarCoordinatorType {
         favouritesViewController.userIndicatorStore = UserIndicatorStore(presenter: indicatorPresenter)
         return favouritesViewController
     }
+    
+//    //ai item
+//    private func createBotAIViewController() -> BotsViewController {
+//        let botsViewController: BotsViewController = BotsViewController.instantiate()
+//        botsViewController.tabBarItem.tag = Int(TABBAR_AI)
+//        botsViewController.accessibilityLabel = VectorL10n.titleFavourites
+//        botsViewController.userIndicatorStore = UserIndicatorStore(presenter: indicatorPresenter)
+//        return botsViewController
+//    }
     
     private func createPeopleViewController() -> PeopleViewController {
         let peopleViewController: PeopleViewController = PeopleViewController.instantiate()
@@ -327,11 +336,17 @@ final class TabBarCoordinator: NSObject, TabBarCoordinatorType {
             
             self.versionCheckCoordinator = versionCheckCoordinator
         }
-        
+
         if RiotSettings.shared.homeScreenShowFavouritesTab {
             let favouritesViewController = self.createFavouritesViewController()
             viewControllers.append(favouritesViewController)
         }
+        
+        //bot ai
+//        if RiotSettings.shared.homeScreenShowAIBot {
+//            let botsViewController = self.createBotAIViewController()
+//            viewControllers.append(botsViewController)
+//        }
         
         if RiotSettings.shared.homeScreenShowPeopleTab {
             let peopleViewController = self.createPeopleViewController()

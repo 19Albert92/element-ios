@@ -429,56 +429,59 @@ TableViewSectionsDelegate>
     sectionNotificationSettings.headerTitle = [VectorL10n settingsNotifications];
     [tmpSections addObject:sectionNotificationSettings];
     
-    if (BuildSettings.allowVoIPUsage && BuildSettings.stunServerFallbackUrlString && RiotSettings.shared.settingsScreenShowEnableStunServerFallback)
-    {
-        Section *sectionCalls = [Section sectionWithTag:SECTION_TAG_CALLS];
-        sectionCalls.headerTitle = [VectorL10n settingsCallsSettings];
-        
-        // Remove "stun:"
-        NSString* stunFallbackHost = [BuildSettings.stunServerFallbackUrlString componentsSeparatedByString:@":"].lastObject;
-        sectionCalls.footerTitle = [VectorL10n settingsCallsStunServerFallbackDescription:stunFallbackHost];
-
-        [sectionCalls addRowWithTag:CALLS_ENABLE_STUN_SERVER_FALLBACK_INDEX];
-        [tmpSections addObject:sectionCalls];
-    }
+    //секция ВЫЗОВ
+//    if (BuildSettings.allowVoIPUsage && BuildSettings.stunServerFallbackUrlString && RiotSettings.shared.settingsScreenShowEnableStunServerFallback)
+//    {
+//        Section *sectionCalls = [Section sectionWithTag:SECTION_TAG_CALLS];
+//        sectionCalls.headerTitle = [VectorL10n settingsCallsSettings];
+//
+//        // Remove "stun:"
+//        NSString* stunFallbackHost = [BuildSettings.stunServerFallbackUrlString componentsSeparatedByString:@":"].lastObject;
+//        sectionCalls.footerTitle = [VectorL10n settingsCallsStunServerFallbackDescription:stunFallbackHost];
+//
+//        [sectionCalls addRowWithTag:CALLS_ENABLE_STUN_SERVER_FALLBACK_INDEX];
+//        [tmpSections addObject:sectionCalls];
+//    }
     
-    if (BuildSettings.settingsScreenShowDiscoverySettings)
-    {
-        Section *sectionDiscovery = [Section sectionWithTag:SECTION_TAG_DISCOVERY];
-        NSInteger count = self.settingsDiscoveryTableViewSection.numberOfRows;
-        for (NSInteger index = 0; index < count; index++)
-        {
-            [sectionDiscovery addRowWithTag:index];
-        }
-        sectionDiscovery.headerTitle = [VectorL10n settingsDiscoverySettings];
-        sectionDiscovery.attributedFooterTitle = self.settingsDiscoveryTableViewSection.attributedFooterTitle;
-        [tmpSections addObject:sectionDiscovery];
-    }
+    // Секция Поиск
+//    if (BuildSettings.settingsScreenShowDiscoverySettings)
+//    {
+//        Section *sectionDiscovery = [Section sectionWithTag:SECTION_TAG_DISCOVERY];
+//        NSInteger count = self.settingsDiscoveryTableViewSection.numberOfRows;
+//        for (NSInteger index = 0; index < count; index++)
+//        {
+//            [sectionDiscovery addRowWithTag:index];
+//        }
+//        sectionDiscovery.headerTitle = [VectorL10n settingsDiscoverySettings];
+//        sectionDiscovery.attributedFooterTitle = self.settingsDiscoveryTableViewSection.attributedFooterTitle;
+//        [tmpSections addObject:sectionDiscovery];
+//    }
     
-    if (BuildSettings.settingsScreenAllowIdentityServerConfig)
-    {
-        Section *sectionIdentityServer = [Section sectionWithTag:SECTION_TAG_IDENTITY_SERVER];
-        [sectionIdentityServer addRowWithTag:IDENTITY_SERVER_INDEX];
-        
-        sectionIdentityServer.headerTitle = [VectorL10n settingsIdentityServerSettings];
-        sectionIdentityServer.footerTitle = account.mxSession.identityService.identityServer ? VectorL10n.settingsIdentityServerDescription : VectorL10n.settingsIdentityServerNoIsDescription;
-        [tmpSections addObject:sectionIdentityServer];
-    }
-    
-    if (BuildSettings.allowLocalContactsAccess)
-    {
-        Section *sectionLocalContacts = [Section sectionWithTag:SECTION_TAG_LOCAL_CONTACTS];
-        [sectionLocalContacts addRowWithTag:LOCAL_CONTACTS_SYNC_INDEX];
-        if (MXKAppSettings.standardAppSettings.syncLocalContacts)
-        {
-            [sectionLocalContacts addRowWithTag:LOCAL_CONTACTS_PHONEBOOK_COUNTRY_INDEX];
-        }
-        
-        NSString *headerTitle = UIDevice.currentDevice.userInterfaceIdiom == UIUserInterfaceIdiomPhone ? VectorL10n.settingsPhoneContacts : VectorL10n.settingsContacts;
-        sectionLocalContacts.headerTitle = headerTitle;
-        sectionLocalContacts.footerTitle = VectorL10n.settingsContactsEnableSyncDescription;
-        [tmpSections addObject:sectionLocalContacts];
-    }
+    // Секция поиск сервера
+//    if (BuildSettings.settingsScreenAllowIdentityServerConfig)
+//    {
+//        Section *sectionIdentityServer = [Section sectionWithTag:SECTION_TAG_IDENTITY_SERVER];
+//        [sectionIdentityServer addRowWithTag:IDENTITY_SERVER_INDEX];
+//
+//        sectionIdentityServer.headerTitle = [VectorL10n settingsIdentityServerSettings];
+//        sectionIdentityServer.footerTitle = account.mxSession.identityService.identityServer ? VectorL10n.settingsIdentityServerDescription : VectorL10n.settingsIdentityServerNoIsDescription;
+//        [tmpSections addObject:sectionIdentityServer];
+//    }
+    //Секция поиск контактов
+//    if (BuildSettings.allowLocalContactsAccess)
+//    {
+//        Section *sectionLocalContacts = [Section sectionWithTag:SECTION_TAG_LOCAL_CONTACTS];
+//        [sectionLocalContacts addRowWithTag:LOCAL_CONTACTS_SYNC_INDEX];
+//        if (MXKAppSettings.standardAppSettings.syncLocalContacts)
+//        {
+//            [sectionLocalContacts addRowWithTag:LOCAL_CONTACTS_PHONEBOOK_COUNTRY_INDEX];
+//        }
+//        
+//        NSString *headerTitle = UIDevice.currentDevice.userInterfaceIdiom == UIUserInterfaceIdiomPhone ? VectorL10n.settingsPhoneContacts : VectorL10n.settingsContacts;
+//        sectionLocalContacts.headerTitle = headerTitle;
+//        sectionLocalContacts.footerTitle = VectorL10n.settingsContactsEnableSyncDescription;
+//        [tmpSections addObject:sectionLocalContacts];
+//    }
     
     MXSession *session = [AppDelegate theDelegate].mxSessions.firstObject;
     if (session.ignoredUsers.count)
@@ -492,18 +495,18 @@ TableViewSectionsDelegate>
         [tmpSections addObject:sectionIgnoredUsers];
     }
     
-    if (RiotSettings.shared.matrixApps)
-    {
-        Section *sectionIntegrations = [Section sectionWithTag:SECTION_TAG_INTEGRATIONS];
-        [sectionIntegrations addRowWithTag:INTEGRATIONS_INDEX];
-        sectionIntegrations.headerTitle = [VectorL10n settingsIntegrations];
-        
-        NSString *integrationManager = [WidgetManager.sharedManager configForUser:session.myUser.userId].apiUrl;
-        NSString *integrationManagerDomain = [NSURL URLWithString:integrationManager].host;
-        sectionIntegrations.footerTitle = [VectorL10n settingsIntegrationsAllowDescription:integrationManagerDomain];
-        
-        [tmpSections addObject:sectionIntegrations];
-    }
+//    if (RiotSettings.shared.matrixApps)
+//    {
+//        Section *sectionIntegrations = [Section sectionWithTag:SECTION_TAG_INTEGRATIONS];
+//        [sectionIntegrations addRowWithTag:INTEGRATIONS_INDEX];
+//        sectionIntegrations.headerTitle = [VectorL10n settingsIntegrations];
+//        
+//        NSString *integrationManager = [WidgetManager.sharedManager configForUser:session.myUser.userId].apiUrl;
+//        NSString *integrationManagerDomain = [NSURL URLWithString:integrationManager].host;
+//        sectionIntegrations.footerTitle = [VectorL10n settingsIntegrationsAllowDescription:integrationManagerDomain];
+//        
+//        [tmpSections addObject:sectionIntegrations];
+//    }
     
     Section *sectionUserInterface = [Section sectionWithTag:SECTION_TAG_USER_INTERFACE];
     sectionUserInterface.headerTitle = [VectorL10n settingsUserInterface];
@@ -546,10 +549,11 @@ TableViewSectionsDelegate>
     [tmpSections addObject:sectionAdvanced];
     
     Section *sectionAbout = [Section sectionWithTag:SECTION_TAG_ABOUT];
-    if (BuildSettings.applicationCopyrightUrlString.length)
-    {
-        [sectionAbout addRowWithTag:ABOUT_COPYRIGHT_INDEX];
-    }
+    //ABOUT_COPYRIGHT_INDEX
+//    if (BuildSettings.applicationCopyrightUrlString.length)
+//    {
+//        [sectionAbout addRowWithTag:ABOUT_COPYRIGHT_INDEX];
+//    }
     if (BuildSettings.applicationTermsConditionsUrlString.length)
     {
         [sectionAbout addRowWithTag:ABOUT_TERM_CONDITIONS_INDEX];
@@ -2302,18 +2306,20 @@ TableViewSectionsDelegate>
             
             cell = labelAndSwitchCell;
         }
+        //в секции 'дополнительно' send crash and analytics data
         else if (row == ADVANCED_CRASH_REPORT_INDEX)
         {
             MXKTableViewCellWithLabelAndSwitch* sendCrashReportCell = [self getLabelAndSwitchCell:tableView forIndexPath:indexPath];
-            
+
             sendCrashReportCell.mxkLabel.text = VectorL10n.settingsAnalyticsAndCrashData;
             sendCrashReportCell.mxkSwitch.on = RiotSettings.shared.enableAnalytics;
             sendCrashReportCell.mxkSwitch.onTintColor = ThemeService.shared.theme.tintColor;
             sendCrashReportCell.mxkSwitch.enabled = YES;
             [sendCrashReportCell.mxkSwitch addTarget:self action:@selector(toggleAnalytics:) forControlEvents:UIControlEventTouchUpInside];
-            
+
             cell = sendCrashReportCell;
         }
+        //в секции 'дополнительно' regashake
         else if (row == ADVANCED_ENABLE_RAGESHAKE_INDEX)
         {
             MXKTableViewCellWithLabelAndSwitch* enableRageShakeCell = [self getLabelAndSwitchCell:tableView forIndexPath:indexPath];
@@ -2376,6 +2382,7 @@ TableViewSectionsDelegate>
             
             cell = clearCacheBtnCell;
         }
+        //в секции 'дополнительно' сообщить об ошибке
         else if (row == ADVANCED_REPORT_BUG_INDEX)
         {
             MXKTableViewCellWithButton *reportBugBtnCell = [tableView dequeueReusableCellWithIdentifier:[MXKTableViewCellWithButton defaultReuseIdentifier]];
@@ -2419,9 +2426,9 @@ TableViewSectionsDelegate>
             MXKTableViewCell *copyrightCell = [self getDefaultTableViewCell:tableView];
 
             copyrightCell.textLabel.text = [VectorL10n settingsCopyright];
-            
+
             [copyrightCell vc_setAccessoryDisclosureIndicatorWithCurrentTheme];
-            
+
             cell = copyrightCell;
         }
         else if (row == ABOUT_PRIVACY_INDEX)

@@ -109,8 +109,8 @@ final class BuildSettings: NSObject {
     
     // Note: Set empty strings to hide the related entry in application settings
     static let applicationCopyrightUrlString = "https://element.io/copyright"
-    static let applicationPrivacyPolicyUrlString = "https://element.io/privacy"
-    static let applicationTermsConditionsUrlString = "https://element.io/terms-of-service"
+    static let applicationPrivacyPolicyUrlString = "https://qaim.me/privacy"
+    static let applicationTermsConditionsUrlString = "https://qaim.me/agreement"
     static let applicationHelpUrlString =
     "https://element.io/help"
     
@@ -236,7 +236,7 @@ final class BuildSettings: NSObject {
     
     // MARK: - Side Menu
     static let enableSideMenu: Bool = true
-    static let sideMenuShowInviteFriends: Bool = true
+    static let sideMenuShowInviteFriends: Bool = false
 
     /// Whether to read the `io.element.functional_members` state event and exclude any service members when computing a room's name and avatar.
     static let supportFunctionalMembers: Bool = true
@@ -266,6 +266,7 @@ final class BuildSettings: NSObject {
     static let homeScreenShowPeopleTab: Bool = true
     static let homeScreenShowRoomsTab: Bool = true
     static let homeScreenShowCommunitiesTab: Bool = true
+    static let homeScreenShowAIBot: Bool = true // ai bot
 
     // MARK: - General Settings Screen
     
@@ -273,15 +274,15 @@ final class BuildSettings: NSObject {
     static let settingsScreenShowUserSurname: Bool = false
     static let settingsScreenAllowAddingEmailThreepids: Bool = true
     static let settingsScreenAllowAddingPhoneThreepids: Bool = true
-    static let settingsScreenShowThreepidExplanatory: Bool = true
+    static let settingsScreenShowThreepidExplanatory: Bool = false // пояснение
     static let settingsScreenShowDiscoverySettings: Bool = true
     static let settingsScreenAllowIdentityServerConfig: Bool = true
     static let settingsScreenShowConfirmMediaSize: Bool = true
     static let settingsScreenShowAdvancedSettings: Bool = true
     static let settingsScreenShowLabSettings: Bool = true
-    static let settingsScreenAllowChangingRageshakeSettings: Bool = true
-    static let settingsScreenAllowChangingCrashUsageDataSettings: Bool = true
-    static let settingsScreenAllowBugReportingManually: Bool = true
+    static let settingsScreenAllowChangingRageshakeSettings: Bool = false //regashake
+    static let settingsScreenAllowChangingCrashUsageDataSettings: Bool = false //send crash and analytics data
+    static let settingsScreenAllowBugReportingManually: Bool = false // сообщить об ошибке
     static let settingsScreenAllowDeactivatingAccount: Bool = true
     static let settingsScreenShowChangePassword:Bool = true
     static let settingsScreenShowEnableStunServerFallback: Bool = true

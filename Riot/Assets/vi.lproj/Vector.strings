@@ -144,7 +144,7 @@
 "contacts_address_book_matrix_users_toggle" = "Chỉ người dùng của matrix";
 "contacts_address_book_no_contact" = "Không có danh bạ nội bộ";
 "contacts_address_book_permission_required" = "Quyền được yêu cầu để truy cập danh bạ nội bộ";
-"contacts_address_book_permission_denied" = "Bạn chưa cho phép Element truy cập danh bạ nội bộ của bạn";
+"contacts_address_book_permission_denied" = "Bạn chưa cho phép Qaim truy cập danh bạ nội bộ của bạn";
 "contacts_user_directory_section" = "DANH MỤC NGƯỜI DÙNG";
 "contacts_user_directory_offline_section" = "DANH MỤC NGƯỜI DÙNG (ngoại tuyến)";
 // Chat participants
@@ -428,7 +428,7 @@
 // Crash report
 "google_analytics_use_prompt" = "Bạn có muốn giúp cải thiện %@ bằng cách tự động báo cáo sự cố vô danh và dữ liệu sử dụng?";
 // Crypto
-"e2e_enabling_on_app_update" = "Element đã hỗ trợ mã hóa end-to-end nhưng bạn cần phải đăng nhập lại để kích hoạt.\n\nBạn có thể thực hiện ngay bây giờ hoặc sau đó từ cài đặt của ứng dụng.";
+"e2e_enabling_on_app_update" = "Qaim đã hỗ trợ mã hóa end-to-end nhưng bạn cần phải đăng nhập lại để kích hoạt.\n\nBạn có thể thực hiện ngay bây giờ hoặc sau đó từ cài đặt của ứng dụng.";
 "e2e_need_log_in_again" = "Bạn cần phải đăng nhập lại để tạo các khoá mã hóa end-to-end cho thiết bị này và gửi khoá chung tới máy chủ nhà của bạn.\nĐây là một lần duy nhất; xin lỗi vì sự bất tiện.";
 // Bug report
 "bug_report_title" = "Báo cáo lỗi";
@@ -502,7 +502,7 @@
 "space_private_join_rule" = "Space riêng tư";
 "space_participants_action_ban" = "Cấm từ space này";
 "space_participants_action_remove" = "Loại bỏ khỏi space này";
-"spaces_coming_soon_detail" = "Tính năng này chưa được triển khai ở đây, nhưng nó đang được tiến hành. Bây giờ, bạn có thể làm với Element trên máy tính của bạn.";
+"spaces_coming_soon_detail" = "Tính năng này chưa được triển khai ở đây, nhưng nó đang được tiến hành. Bây giờ, bạn có thể làm với Qaim trên máy tính của bạn.";
 "spaces_invites_coming_soon_title" = "Mời sắp có";
 "spaces_add_rooms_coming_soon_title" = "Thêm phòng sắp có";
 "spaces_coming_soon_title" = "Sắp có";
@@ -1625,7 +1625,7 @@
 "skip" = "Bỏ qua";
 "close" = "Đóng";
 "store_promotional_text" = "Ứng dụng trò chuyện và cộng tác bảo vệ quyền riêng tư, trên mạng mở. Phi tập trung để đưa bạn vào tầm kiểm soát. Không có datamining, không có backdoors và không có quyền truy cập của bên thứ ba.";
-"store_full_description" = "Element là một loại ứng dụng cộng tác và nhắn tin mới:\n\n1. Đặt bạn kiểm soát để giữ quyền riêng tư của bạn\n2. Cho phép bạn giao tiếp với bất kỳ ai trong mạng Matrix, và thậm chí hơn thế nữa bằng cách tích hợp với các ứng dụng như Slack\n3. Bảo vệ bạn khỏi quảng cáo, datamining, cửa hậu và khu vườn có tường bao quanh\n4. Bảo mật bạn thông qua mã hóa đầu cuối, với việc ký chéo để xác minh người khác\n\nElement hoàn toàn khác với các ứng dụng nhắn tin và cộng tác khác vì nó được phân cấp và nguồn mở.\n\nElement cho phép bạn tự lưu trữ - hoặc chọn máy chủ - để bạn có quyền riêng tư, quyền sở hữu và kiểm soát dữ liệu và cuộc trò chuyện của mình. Nó cho phép bạn truy cập vào một mạng mở; vì vậy, bạn không chỉ bị mắc kẹt khi nói chuyện với những người dùng Element khác. Và nó rất an toàn.\n\nElement có thể làm tất cả điều này bởi vì nó hoạt động trên Matrix - tiêu chuẩn cho giao tiếp mở, phi tập trung. \n\nElement giúp bạn kiểm soát bằng cách cho phép bạn chọn người tổ chức các cuộc trò chuyện của bạn. Từ ứng dụng Element, bạn có thể chọn lưu trữ theo nhiều cách khác nhau:\n\n1. Nhận tài khoản miễn phí trên máy chủ công cộng matrix.org\n2. Tự lưu trữ tài khoản của bạn bằng cách chạy máy chủ trên phần cứng của riêng bạn\n3. Đăng ký tài khoản trên máy chủ tùy chỉnh bằng cách đăng ký vào nền tảng lưu trữ Dịch vụ Element Matrix\n\nTại sao chọn Element?\n\nSở hữu dữ liệu của bạn: Bạn quyết định nơi để giữ dữ liệu và tin nhắn của bạn. Bạn sở hữu nó và kiểm soát nó, không phải một số MEGACORP khai thác dữ liệu của bạn hoặc cho phép truy cập vào bên thứ ba.\n\nTIN NHẮN MỞ VÀ CỘNG TÁC: Bạn có thể trò chuyện với bất kỳ ai khác trong mạng Matrix, cho dù họ đang sử dụng Element hay ứng dụng Matrix khác và ngay cả khi họ đang sử dụng một hệ thống nhắn tin khác như Slack, IRC hoặc XMPP.\n\nSUPER-SECURE: Mã hóa đầu cuối thực sự (chỉ những người trong cuộc trò chuyện mới có thể giải mã tin nhắn) và ký chéo để xác minh các thiết bị của người tham gia hội thoại.\n\nGIAO TIẾP ĐẦY ĐỦ: Nhắn tin, cuộc gọi thoại và video, chia sẻ tệp, chia sẻ màn hình và một loạt các tích hợp, bot và tiện ích. Xây dựng phòng, cộng đồng, giữ liên lạc và hoàn thành công việc.\n\nỞ mọi nơi bạn đang có: Giữ liên lạc bất cứ nơi nào bạn đang có với lịch sử tin nhắn được đồng bộ hóa hoàn toàn trên tất cả các thiết bị của bạn và trên web tại https://element.io/app.";
+"store_full_description" = "Qaim là một loại ứng dụng cộng tác và nhắn tin mới:\n\n1. Đặt bạn kiểm soát để giữ quyền riêng tư của bạn\n2. Cho phép bạn giao tiếp với bất kỳ ai trong mạng Matrix, và thậm chí hơn thế nữa bằng cách tích hợp với các ứng dụng như Slack\n3. Bảo vệ bạn khỏi quảng cáo, datamining, cửa hậu và khu vườn có tường bao quanh\n4. Bảo mật bạn thông qua mã hóa đầu cuối, với việc ký chéo để xác minh người khác\n\nQaim hoàn toàn khác với các ứng dụng nhắn tin và cộng tác khác vì nó được phân cấp và nguồn mở.\n\nQaim cho phép bạn tự lưu trữ - hoặc chọn máy chủ - để bạn có quyền riêng tư, quyền sở hữu và kiểm soát dữ liệu và cuộc trò chuyện của mình. Nó cho phép bạn truy cập vào một mạng mở; vì vậy, bạn không chỉ bị mắc kẹt khi nói chuyện với những người dùng Qaim khác. Và nó rất an toàn.\n\nQaim có thể làm tất cả điều này bởi vì nó hoạt động trên Matrix - tiêu chuẩn cho giao tiếp mở, phi tập trung. \n\nQaim giúp bạn kiểm soát bằng cách cho phép bạn chọn người tổ chức các cuộc trò chuyện của bạn. Từ ứng dụng Qaim, bạn có thể chọn lưu trữ theo nhiều cách khác nhau:\n\n1. Nhận tài khoản miễn phí trên máy chủ công cộng matrix.org\n2. Tự lưu trữ tài khoản của bạn bằng cách chạy máy chủ trên phần cứng của riêng bạn\n3. Đăng ký tài khoản trên máy chủ tùy chỉnh bằng cách đăng ký vào nền tảng lưu trữ Dịch vụ Qaim Matrix\n\nTại sao chọn Qaim?\n\nSở hữu dữ liệu của bạn: Bạn quyết định nơi để giữ dữ liệu và tin nhắn của bạn. Bạn sở hữu nó và kiểm soát nó, không phải một số MEGACORP khai thác dữ liệu của bạn hoặc cho phép truy cập vào bên thứ ba.\n\nTIN NHẮN MỞ VÀ CỘNG TÁC: Bạn có thể trò chuyện với bất kỳ ai khác trong mạng Matrix, cho dù họ đang sử dụng Qaim hay ứng dụng Matrix khác và ngay cả khi họ đang sử dụng một hệ thống nhắn tin khác như Slack, IRC hoặc XMPP.\n\nSUPER-SECURE: Mã hóa đầu cuối thực sự (chỉ những người trong cuộc trò chuyện mới có thể giải mã tin nhắn) và ký chéo để xác minh các thiết bị của người tham gia hội thoại.\n\nGIAO TIẾP ĐẦY ĐỦ: Nhắn tin, cuộc gọi thoại và video, chia sẻ tệp, chia sẻ màn hình và một loạt các tích hợp, bot và tiện ích. Xây dựng phòng, cộng đồng, giữ liên lạc và hoàn thành công việc.\n\nỞ mọi nơi bạn đang có: Giữ liên lạc bất cứ nơi nào bạn đang có với lịch sử tin nhắn được đồng bộ hóa hoàn toàn trên tất cả các thiết bị của bạn và trên web tại https://Qaim.io/app.";
 // String for App Store
 "store_short_description" = "Chat/VoIP bảo mật phi tập trung";
 
@@ -1990,15 +1990,20 @@
 "onboarding_use_case_message" = "Chúng tôi sẽ giúp bạn kết nối.";
 "onboarding_use_case_title" = "Bạn nói chuyện nhiều nhất với ai?";
 "onboarding_splash_page_4_title_no_pun" = "Chức năng nhắn tin cho đội ngũ của bạn.";
+"onboarding_splash_page_4_message" = "Qaim là rất tốt cho công việc. Được tin cậy bởi các tổ chức an toàn nhất trên thế giới.";
 "onboarding_splash_page_3_message" = "Được mật mã hoá nối đầu và không yêu cầu số điện thoại. Không quảng cáo hay thu thập dữ liệu.";
 "onboarding_splash_page_1_message" = "Giao tiếp an ninh và độc lập, cho bạn cùng mức độ riêng tư như khi nói chuyện đối diện tại nhà mình.";
 "onboarding_splash_page_3_title" = "Nhắn tin an ninh.";
 "onboarding_splash_page_2_message" = "Lựa chọn nơi mà các cuộc nói chuyện của bạn được lưu trữ, cho bạn quyền kiểm soát và sự độc lập. Kết nối thông qua Matrix.";
 "onboarding_splash_page_2_title" = "Bạn nắm kiểm soát.";
-"onboarding_splash_page_1_title" = "Làm chủ các cuộc nói chuyện của bạn.";
-"onboarding_splash_login_button_title" = "Tôi đã có danh khoản";
 
 // Onboarding
-"onboarding_splash_register_button_title" = "Tạo danh khoản";
+
+
+
+"onboarding_splash_register_button_title" = "Tiếp theo";
+"onboarding_splash_login_button_title" = "Tôi đã có tài khoản";
+"onboarding_splash_page_1_title" = "Trò chuyện An toàn.";
+
 "accessibility_button_label" = "nút";
 "enable" = "Bật";

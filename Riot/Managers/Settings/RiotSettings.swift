@@ -104,7 +104,8 @@ final class RiotSettings: NSObject {
     
     /// Whether the user was previously shown the Matomo analytics prompt.
     var hasSeenAnalyticsPrompt: Bool {
-        RiotSettings.defaults.object(forKey: UserDefaultsKeys.enableAnalytics) != nil
+//        RiotSettings.defaults.object(forKey: UserDefaultsKeys.enableAnalytics) != nil
+        true
     }
     
     /// Whether the user has both seen the Matomo analytics prompt and declined it.
@@ -267,6 +268,9 @@ final class RiotSettings: NSObject {
     
     @UserDefault(key: "homeScreenShowFavouritesTab", defaultValue: BuildSettings.homeScreenShowFavouritesTab, storage: defaults)
     var homeScreenShowFavouritesTab
+    
+//    @UserDefault(key: "homeScreenShowAIBot", defaultValue: BuildSettings.homeScreenShowAIBot, storage: defaults)
+//    var homeScreenShowAIBot
     
     @UserDefault(key: "homeScreenShowPeopleTab", defaultValue: BuildSettings.homeScreenShowPeopleTab, storage: defaults)
     var homeScreenShowPeopleTab

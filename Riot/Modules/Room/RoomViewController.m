@@ -3619,6 +3619,65 @@ static CGSize kThreadListBarButtonItemImageSize;
             }]];
         }
         
+        //translate
+        if (!isJitsiCallEvent && selectedEvent.eventType != MXEventTypePollStart)
+        {
+            [self.eventMenuBuilder addItemWithType:EventMenuItemTypeTranslate
+                                            action:[UIAlertAction actionWithTitle:@"Translate"
+                                                                            style:UIAlertActionStyleDefault
+                                                                          handler:^(UIAlertAction * action) {
+               
+                
+                NSString *userLocale = [[NSLocale currentLocale] localeIdentifier];
+                NSString *userLanguage = [userLocale substringToIndex:2];
+                NSString *urlString1 = @"https://m.qaim.me/api/translate";
+                NSDictionary *jsonBodyDict = @{@"phrase":selectedComponent.textMessage, @"lng":userLanguage};
+                NSData *jsonBodyData = [NSJSONSerialization dataWithJSONObject:jsonBodyDict options:kNilOptions error:nil];
+            
+                NSMutableURLRequest *request = [NSMutableURLRequest new];
+                request.HTTPMethod = @"POST";
+                
+                [request setURL:[NSURL URLWithString:urlString1]];
+                [request setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
+                [request setValue:@"application/json" forHTTPHeaderField:@"Accept"];
+                [request setHTTPBody:jsonBodyData];
+                [request setTimeoutInterval: 6];
+  
+                NSURLSessionConfiguration *config = [NSURLSessionConfiguration defaultSessionConfiguration];
+                NSURLSession *session = [NSURLSession sessionWithConfiguration:config
+                                                                      delegate:nil
+                                                                 delegateQueue:[NSOperationQueue mainQueue]];
+                
+                NSLog(@"Конфигурация сессии :%@", config);
+                
+                NSURLSessionDataTask *task = [session dataTaskWithRequest:request
+                                                        completionHandler:^(NSData * _Nullable data,
+                                                                            NSURLResponse * _Nullable response,
+                    
+                                                                            NSError * _Nullable error) {
+
+                NSHTTPURLResponse *asHTTPResponse = (NSHTTPURLResponse *) response;
+                NSLog(@"The response is: %@", asHTTPResponse);
+                
+                NSDictionary *forJSONObject = [NSJSONSerialization JSONObjectWithData:data options:kNilOptions error:nil];
+                
+                if (forJSONObject != nil) {
+                    NSString *value = [forJSONObject objectForKey:@"translation"];
+                    NSLog(@"Перевод выполнен :%@", value);
+                    [self showAlertWithTitle:@"" message:value];
+                } else {
+                    [self showAlertWithTitle:@"Ошибка!" message:@"Попробуйте еще раз!"];
+                }
+                    
+                }];
+             
+                [task resume];
+                
+            }]];
+        }
+        
+        
+        
         if (selectedEvent.sentState == MXEventSentStateSent && selectedEvent.eventType != MXEventTypePollStart)
         {
             [self.eventMenuBuilder addItemWithType:EventMenuItemTypeForward
@@ -3632,6 +3691,8 @@ static CGSize kThreadListBarButtonItemImageSize;
                 [self presentEventForwardingDialogForSelectedEvent:selectedEvent];
             }]];
         }
+        
+        
         
         if (!isJitsiCallEvent && BuildSettings.messageDetailsAllowShare && selectedEvent.eventType != MXEventTypePollStart)
         {

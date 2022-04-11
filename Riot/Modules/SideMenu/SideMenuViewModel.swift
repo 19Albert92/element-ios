@@ -107,7 +107,8 @@ final class SideMenuViewModel: SideMenuViewModelType {
         
         sideMenuItems += [
             .settings,
-            .feedback
+            .help
+//            .feedback
         ]
         
         // Hide app version

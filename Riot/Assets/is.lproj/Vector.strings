@@ -1843,7 +1843,7 @@
 
 // MARK: - Major update
 
-"major_update_title" = "Riot er núna %@";
+"major_update_title" = "%@";
 
 // MARK: - Cross-signing
 

@@ -271,6 +271,7 @@ internal class Asset: NSObject {
     internal static let tabHome = ImageAsset(name: "tab_home")
     internal static let tabPeople = ImageAsset(name: "tab_people")
     internal static let tabRooms = ImageAsset(name: "tab_rooms")
+    internal static let aiIcon = ImageAsset(name: "ai_icon")
     internal static let imagesIconQAIMWhite = ImageAsset(name: "images_icon_QAIM_white")
     internal static let launchScreenLogo = ImageAsset(name: "launch_screen_logo")
     internal static let qaimLogoAndText = ImageAsset(name: "qaim_logo_and_text")
@@ -280,6 +281,7 @@ internal class Asset: NSObject {
     internal static let cancel = ImageAsset(name: "cancel")
     internal static let e2eVerified = ImageAsset(name: "e2e_verified")
     internal static let horizontalLogo = ImageAsset(name: "horizontal_logo")
+    internal static let horizontalLogo1 = ImageAsset(name: "horizontal_logo1")
     internal static let radioButtonDefault = ImageAsset(name: "radio-button-default")
     internal static let radioButtonSelected = ImageAsset(name: "radio-button-selected")
   }

@@ -157,7 +157,8 @@ final class OnboardingCoordinator: NSObject, OnboardingCoordinatorProtocol {
         
         switch result {
         case .register:
-            showUseCaseSelectionScreen()
+//            showUseCaseSelectionScreen()
+            showAuthenticationScreen()
         case .login:
             showAuthenticationScreen()
         }
@@ -167,16 +168,16 @@ final class OnboardingCoordinator: NSObject, OnboardingCoordinatorProtocol {
     /// Show the use case screen for new users.
     private func showUseCaseSelectionScreen() {
         MXLog.debug("[OnboardingCoordinator] showUseCaseSelectionScreen")
-        
+
         let coordinator = OnboardingUseCaseSelectionCoordinator()
         coordinator.completion = { [weak self, weak coordinator] result in
             guard let self = self, let coordinator = coordinator else { return }
             self.useCaseSelectionCoordinator(coordinator, didCompleteWith: result)
         }
-        
+
         coordinator.start()
         add(childCoordinator: coordinator)
-        
+
         if navigationRouter.modules.isEmpty {
             navigationRouter.setRootModule(coordinator, popCompletion: nil)
         } else {
@@ -184,6 +185,7 @@ final class OnboardingCoordinator: NSObject, OnboardingCoordinatorProtocol {
                 self?.remove(childCoordinator: coordinator)
             }
         }
+        
     }
     
     /// Displays the next view in the flow after the use case screen.

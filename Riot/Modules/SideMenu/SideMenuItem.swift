@@ -21,7 +21,7 @@ enum SideMenuItem {
     case inviteFriends
     case settings
     case help
-    case feedback
+//    case feedback
 }
 
 extension SideMenuItem {
@@ -36,8 +36,8 @@ extension SideMenuItem {
             title = VectorL10n.sideMenuActionSettings
         case .help:
             title = VectorL10n.sideMenuActionHelp
-        case .feedback:
-            title = VectorL10n.sideMenuActionFeedback
+//        case .feedback:
+//            title = VectorL10n.sideMenuActionFeedback
         }
 
         return title
@@ -53,8 +53,8 @@ extension SideMenuItem {
             icon = Asset.Images.sideMenuActionIconSettings.image
         case .help:
             icon = Asset.Images.sideMenuActionIconHelp.image
-        case .feedback:
-            icon = Asset.Images.sideMenuActionIconFeedback.image
+//        case .feedback:
+//            icon = Asset.Images.sideMenuActionIconFeedback.image
         }
 
         return icon

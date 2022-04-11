@@ -338,11 +338,11 @@
 "settings_version" = "Versão %@";
 "settings_olm_version" = "Versão de Olm %@";
 "settings_copyright" = "Copyright";
-"settings_copyright_url" = "https://riot.im/copyright";
+"settings_copyright_url" = "https://qaim.me/copyright";
 "settings_term_conditions" = "Termos & Condições";
-"settings_term_conditions_url" = "https://riot.im/tac_apple";
+"settings_term_conditions_url" = "https://qaim.me/tac_apple";
 "settings_privacy_policy" = "Política de Privacidade";
-"settings_privacy_policy_url" = "https://riot.im/privacy";
+"settings_privacy_policy_url" = "https://qaim.me/privacy";
 "settings_third_party_notices" = "Notas de Terceiros";
 "settings_send_crash_report" = "Enviar dados de cash & uso anon";
 "settings_enable_rageshake" = "Agitar com raiva para reportar bug";
@@ -556,7 +556,7 @@
 "rerequest_keys_alert_message" = "Por favor lance %@ num outro dispositivo que possa decriptar a mensagem para que ele possa enviar as chaves para esta sessão.";
 // String for App Store
 "store_short_description" = "Chat/VoIP descentralizado e seguro";
-"store_full_description" = "Element is um novo tipo de mensageiro e app de colaboração que:\n\n1. Põe você em controle para preservar sua privacidade\n2. Permite você se comunicar com qualquer pessoa na rede Matrix, e até além ao integrar-se com apps como Slack\n3. Protege você de publicidade, datamining, backdoors e jardins murados\n4. Assegura você através de encriptação ponta-a-pontam com assinatura cruzada para verificar ouras(os)\n\nElement é completamente diferente de outros apps de mensageria e colaboração porque ele é descentralizado e open source.\n\nElement permite você auto-hospedar - ou escolher um host - para que você tenha privacidade, propriedade e controle de seus dados e conversas. Ele dá a você acesso a uma rede aberta; então você não está simplesmente preso falando com outras(os) usuárias(os) Element somente. E ele é muito seguro.\n\nElement é capaz de fazer tudo isso porque ele opera em Matrix - o padrão para comunicação aberta e descentralizada.\n\nElement põe você em controle ao permitir você escolher quem hospeda suas conversas. De seu app Element, você pode escolher hospedar de diferentes maneiras:\n\n1. Pegar uma conta grátis no servidor público matrix.org\n2. Auto-hospedar sua conta ao rodar um servidor em seu próprio hardware\n3. Registrar-se para uma conta num servidor personalizado ao simplesmente assinar a plataforma de hospedagem Element Matrix Services\n\nPorquê escolher Element?\n\nTENHA POSSE DE SEUS DADOS: Você decide onde manter seus dados e mensagens. Você os possui e controla, não alguma MEGACORP que mina seus dados ou dá acesso a terceiros.\n\nMENSAGERIA E COLABORAÇÃO ABERTOS: Você pode conversar com qualquer outra pessoa na rede Matrix, caso ela esteja usando Element ou um outro app Matrix, e mesmo se ela estiver usando um sistema de mensageria diferente, do tipo de Slack, IRC ou XMPP.\n\nSUPER-SEGURO: Encriptação ponta-a-ponta real (somente aquelas/es na conversa podem decriptar mensagens), e assinatura cruzada para verificar os dispositivos de participantes de conversa.\n\nCOMUNICAÇÃO COMPLETA: Mensageria, chamadas de voz e vídeo, compartilhamento de arquivo, compartilhamento de tela e um monte de integrações, bots e widgets. Construa salas, comunidades, fique em contato e tenha as coisas feitas.\n\nEM TODO LUGAR ONDE VOCÊ ESTEJA: Fique em contato onde quer que você esteja com histórico de mensagem sincronizado por todos os dispositivos e na web em https://element.io/app.";
+"store_full_description" = "Qaim is um novo tipo de mensageiro e app de colaboração que:\n\n1. Põe você em controle para preservar sua privacidade\n2. Permite você se comunicar com qualquer pessoa na rede Matrix, e até além ao integrar-se com apps como Slack\n3. Protege você de publicidade, datamining, backdoors e jardins murados\n4. Assegura você através de encriptação ponta-a-pontam com assinatura cruzada para verificar ouras(os)\n\nQaim é completamente diferente de outros apps de mensageria e colaboração porque ele é descentralizado e open source.\n\nQaim permite você auto-hospedar - ou escolher um host - para que você tenha privacidade, propriedade e controle de seus dados e conversas. Ele dá a você acesso a uma rede aberta; então você não está simplesmente preso falando com outras(os) usuárias(os) Qaim somente. E ele é muito seguro.\n\nQaim é capaz de fazer tudo isso porque ele opera em Matrix - o padrão para comunicação aberta e descentralizada.\n\nQaim põe você em controle ao permitir você escolher quem hospeda suas conversas. De seu app Qaim, você pode escolher hospedar de diferentes maneiras:\n\n1. Pegar uma conta grátis no servidor público matrix.org\n2. Auto-hospedar sua conta ao rodar um servidor em seu próprio hardware\n3. Registrar-se para uma conta num servidor personalizado ao simplesmente assinar a plataforma de hospedagem Qaim Matrix Services\n\nPorquê escolher Qaim?\n\nTENHA POSSE DE SEUS DADOS: Você decide onde manter seus dados e mensagens. Você os possui e controla, não alguma MEGACORP que mina seus dados ou dá acesso a terceiros.\n\nMENSAGERIA E COLABORAÇÃO ABERTOS: Você pode conversar com qualquer outra pessoa na rede Matrix, caso ela esteja usando Qaim ou um outro app Matrix, e mesmo se ela estiver usando um sistema de mensageria diferente, do tipo de Slack, IRC ou XMPP.\n\nSUPER-SEGURO: Encriptação ponta-a-ponta real (somente aquelas/es na conversa podem decriptar mensagens), e assinatura cruzada para verificar os dispositivos de participantes de conversa.\n\nCOMUNICAÇÃO COMPLETA: Mensageria, chamadas de voz e vídeo, compartilhamento de arquivo, compartilhamento de tela e um monte de integrações, bots e widgets. Construa salas, comunidades, fique em contato e tenha as coisas feitas.\n\nEM TODO LUGAR ONDE VOCÊ ESTEJA: Fique em contato onde quer que você esteja com histórico de mensagem sincronizado por todos os dispositivos e na web em https://Qaim.io/app.";
 "auth_login_single_sign_on" = "Fazer Sign In";
 "auth_autodiscover_invalid_response" = "Resposta de descoberta de servidorcasa inválida";
 "room_message_unable_open_link_error_message" = "Incapaz de abrir o link.";
@@ -1127,7 +1127,7 @@
 "secrets_setup_recovery_passphrase_confirm_passphrase_placeholder" = "Confirmar frase";
 "cross_signing_setup_banner_title" = "Configurar encriptação";
 "cross_signing_setup_banner_subtitle" = "Verifique seus outros dispositivos mais fácil";
-"major_update_title" = "Riot agora é %@";
+"major_update_title" = "%@";
 "major_update_learn_more_action" = "Saiba mais";
 "major_update_done_action" = "Entendido";
 "pin_protection_choose_pin" = "Crie um PIN por segurança";
@@ -1574,19 +1574,23 @@
 "location_sharing_share_action" = "Compartilhar";
 "location_sharing_close_action" = "Fechar";
 "ok" = "OK";
-"onboarding_splash_page_1_message" = "Comunicação segura e independente que lhe dá o mesmo nível de privacidade que uma conversa face-a-face em sua própria casa.";
+
 "settings_enable_room_message_bubbles" = "Bolhas de mensagem";
-"onboarding_splash_page_4_message" = "Element também é ótimo para o lugar de trabalho. É confiado pelas organizações mais seguras do mundo.";
-"onboarding_splash_page_4_title_no_pun" = "Mensageria para seu time.";
-"onboarding_splash_page_3_message" = "Encriptado ponta-a-ponta e nenhum número de telefone requerido. Sem publicidade ou datamining.";
-"onboarding_splash_page_3_title" = "Mensageria segura.";
-"onboarding_splash_page_2_message" = "Escolha onde suas conversas são mantidas, dando-lhe controle e independência. Conectado via Matrix.";
-"onboarding_splash_page_2_title" = "Você está em controle.";
-"onboarding_splash_page_1_title" = "Tenha posse de suas conversas.";
-"onboarding_splash_login_button_title" = "Eu já tenho uma conta";
 
 // Onboarding
-"onboarding_splash_register_button_title" = "Criar conta";
+
+"onboarding_splash_register_button_title" = "Próximo";
+"onboarding_splash_login_button_title" = "Já tenho uma conta";
+"onboarding_splash_page_1_title" = "Chat Seguro.";
+"onboarding_splash_page_1_message" = "Comunicação segura e independente que oferece o mesmo nível de privacidade que a comunicação face a face em sua própria casa.";
+"onboarding_splash_page_2_title" = "Depende de você.";
+"onboarding_splash_page_2_message" = "Escolha onde ter a conversa, dando-lhe controle e independência. Comunicação através da Matrix.";
+"onboarding_splash_page_3_title" = "Mensagens seguras.";
+"onboarding_splash_page_3_message" = "Criptografia de ponta a ponta e nenhum número de telefone necessário. Sem anúncios ou coleta de dados.";
+"onboarding_splash_page_4_title_no_pun" = "Mensagens para sua equipe.";
+"onboarding_splash_page_4_message" = "A Qaim é ótima para o trabalho. Com a confiança das organizações mais seguras do mundo.";
+
+
 "poll_edit_form_poll_type_closed_description" = "Resultados são somente revelados quando você termina a sondagem";
 "poll_edit_form_poll_type_open" = "Sondagem aberta";
 "poll_edit_form_poll_type_closed" = "Sondagem fechada";

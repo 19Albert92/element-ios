@@ -24,7 +24,7 @@
 "camera" = "카메라";
 // String for App Store
 "store_short_description" = "안전한 분산 대화/VoIP";
-"store_full_description" = "여러분의 통제 하에 완전히 유연한 대화 앱. Riot은 여러분이 원하는 방식으로 대화할 수 있도록 합니다. 개방형 분산 커뮤니티의 표준 - [matrix]를 위해 제작됨. \n \n무료 matrix.org 계정을 만들고, https://modular.im에서 자신만의 서버, 혹은 다른 Matrix 서버를 얻으세요. \n \n왜 Riot.im을 선택해야 하나요? \n \n완전한 대화: 원하는 대로 팀이나 친구, 커뮤니티를 중심으로 방을 만드세요! 대화, 파일 공유, 위젯 추가와 음성 및 영상 통화 - 모두 무료입니다. \n \n강력한 통합: 여러분이 알고 사랑하는 도구와 함께 Riot.im을 사용하세요. Riot.im이라면 다른 대화 앱의 사용자와 그룹까지도 대화할 수 있습니다. \n \n개인 및 보안: 대화를 비밀로 유지하세요. 최첨단 종단간 암호화로 비밀 대화를 은밀하게 유지해줍니다. \n \n오픈 소스: Matrix로 만들어진 오픈 소스입니다. 자신의 데이터를 자신의 서버에 소유하거나, 신뢰하는 서버에 맡기세요. \n \n어디에 있든: 모든 기기나 https://riot.im에서 완전히 동기화된 메시지 기록으로 연락을 유지합니다.";
+"store_full_description" = "여러분의 통제 하에 완전히 유연한 대화 앱. Qaim은 여러분이 원하는 방식으로 대화할 수 있도록 합니다. 개방형 분산 커뮤니티의 표준 - [matrix]를 위해 제작됨. \n \n무료 matrix.org 계정을 만들고, https://modular.im에서 자신만의 서버, 혹은 다른 Matrix 서버를 얻으세요. \n \n왜 Qaim.im을 선택해야 하나요? \n \n완전한 대화: 원하는 대로 팀이나 친구, 커뮤니티를 중심으로 방을 만드세요! 대화, 파일 공유, 위젯 추가와 음성 및 영상 통화 - 모두 무료입니다. \n \n강력한 통합: 여러분이 알고 사랑하는 도구와 함께 Qaim.im을 사용하세요. Qaim.im이라면 다른 대화 앱의 사용자와 그룹까지도 대화할 수 있습니다. \n \n개인 및 보안: 대화를 비밀로 유지하세요. 최첨단 종단간 암호화로 비밀 대화를 은밀하게 유지해줍니다. \n \n오픈 소스: Matrix로 만들어진 오픈 소스입니다. 자신의 데이터를 자신의 서버에 소유하거나, 신뢰하는 서버에 맡기세요. \n \n어디에 있든: 모든 기기나 https://Qaim.im에서 완전히 동기화된 메시지 기록으로 연락을 유지합니다.";
 "join" = "참가";
 "decline" = "끊기";
 "accept" = "수락";
@@ -375,11 +375,11 @@
 "settings_version" = "버전 %@";
 "settings_olm_version" = "Olm 버전 %@";
 "settings_copyright" = "저작권";
-"settings_copyright_url" = "https://riot.im/copyright";
+"settings_copyright_url" = "https://Qaim.im/copyright";
 "settings_term_conditions" = "이용 약관";
-"settings_term_conditions_url" = "https://riot.im/tac_apple";
+"settings_term_conditions_url" = "https://Qaim.im/tac_apple";
 "settings_privacy_policy" = "개인 정보 정책";
-"settings_privacy_policy_url" = "https://riot.im/privacy";
+"settings_privacy_policy_url" = "https://Qaim.im/privacy";
 "settings_third_party_notices" = "제 3자 공지";
 "settings_send_crash_report" = "충돌 & 사용 데이터 보내기";
 "settings_enable_rageshake" = "분노의 흔들기로 버그 신고";
@@ -1520,13 +1520,15 @@
 "search_filter_placeholder" = "필터";
 "onboarding_use_case_existing_server_button" = "서버에 연결";
 "onboarding_use_case_community_messaging" = "커뮤니티";
-"onboarding_splash_page_4_message" = "Element는 직장에서도 좋습니다. 세계에서 가장 안전한 조직에서 신뢰합니다.";
-"onboarding_splash_page_4_title_no_pun" = "당신의 팀을 위한 메세징.";
-"onboarding_splash_page_3_message" = "종단 간 암호화(E2EE) 되며 전화 번호가 필요하지 않습니다. 광고나 수집되는 데이터가 없습니다.";
-"onboarding_splash_page_3_title" = "보안 메세징.";
-"onboarding_splash_page_2_title" = "당신에게 모든 통제 권한이 있습니다.";
-"onboarding_splash_page_1_message" = "독립적이고 안전한 커뮤니케이션으로 집에서 직접 이야기 하는 것과 같은 개인 정보 보호를 제공합니다.";
-"onboarding_splash_login_button_title" = "이미 계정이 있습니다";
 
 // Onboarding
-"onboarding_splash_register_button_title" = "계정 만들기";
+"onboarding_splash_register_button_title" = "다음";
+"onboarding_splash_login_button_title" = "이미 계정이 있습니다.";
+"onboarding_splash_page_1_title" = "안전한 채팅.";
+"onboarding_splash_page_1_message" = "집에서 대면 커뮤니케이션과 동일한 수준의 프라이버시를 제공하는 안전하고 독립적인 커뮤니케이션.";
+"onboarding_splash_page_2_title" = "당신에게 달려 있습니다.";
+"onboarding_splash_page_2_message" = "대화를 할 장소를 선택하여 통제력과 독립성을 제공합니다. 매트릭스를 통한 커뮤니케이션";
+"onboarding_splash_page_3_title" = "보안 메시징.";
+"onboarding_splash_page_3_message" = "종단 간 암호화 및 전화번호가 필요하지 않습니다. 광고 또는 데이터 수집이 필요하지 않습니다.";
+"onboarding_splash_page_4_title_no_pun" = "팀을 위한 메시지.";
+"onboarding_splash_page_4_message" = "Qaim은 업무에 적합합니다. 세계에서 가장 안전한 조직이 신뢰합니다.";
