@@ -252,7 +252,7 @@ final class TabBarCoordinator: NSObject, TabBarCoordinatorType {
         favouritesViewController.userIndicatorStore = UserIndicatorStore(presenter: indicatorPresenter)
         return favouritesViewController
     }
-    
+
 //    //ai item
 //    private func createBotAIViewController() -> BotsViewController {
 //        let botsViewController: BotsViewController = BotsViewController.instantiate()

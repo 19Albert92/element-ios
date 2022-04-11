@@ -250,8 +250,8 @@
                         <segue destination="HnD-LA-psC" kind="relationship" relationship="viewControllers" id="zON-Qp-EVq"/>
                         <segue destination="IGB-jr-yFz" kind="relationship" relationship="viewControllers" id="CeF-yL-aO0"/>
                         <segue destination="HPQ-zg-lZR" kind="relationship" relationship="viewControllers" id="y12-eg-vhO"/>
-                        <segue destination="HUd-Da-6RI" kind="relationship" relationship="viewControllers" id="mk8-bg-rfs"/>
                         <segue destination="SLx-Wj-p7E" kind="relationship" relationship="viewControllers" id="MLn-VT-30W"/>
+                        <segue destination="HUd-Da-6RI" kind="relationship" relationship="viewControllers" id="KaI-Li-q6e"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="k1S-FF-3Zu" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -454,7 +454,7 @@
         <!--Bots View Controller-->
         <scene sceneID="DB6-zk-WmC">
             <objects>
-                <viewController storyboardIdentifier="BotsViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="HUd-Da-6RI" customClass="BotsViewController" customModule="Riot" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="BotsViewController" extendedLayoutIncludesOpaqueBars="YES" useStoryboardIdentifierAsRestorationIdentifier="YES" id="HUd-Da-6RI" customClass="BotsViewController" customModule="Riot" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="q5Q-my-9Y5"/>
                         <viewControllerLayoutGuide type="bottom" id="jYx-cM-2LV"/>
@@ -468,7 +468,7 @@
                         <inset key="imageInsets" minX="0.0" minY="12" maxX="0.0" maxY="10"/>
                     </tabBarItem>
                     <toolbarItems/>
-                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationItem key="navigationItem" id="Zii-Wh-ftx"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ePv-gk-WN6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -764,7 +764,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="Tfl-tq-LQp"/>
+        <segue reference="mhb-l9-pM3"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="ai_icon" width="55" height="54.5"/>

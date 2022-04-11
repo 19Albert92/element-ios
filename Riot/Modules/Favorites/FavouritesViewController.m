@@ -38,7 +38,7 @@
 @property (strong, nonatomic) NSString *userID;
 
 //@property(strong, nonatomic)WKWebView *webview;
-@property(strong, nonatomic)NSString *url;
+@property (strong, nonatomic)NSString *url;
 @property (weak, nonatomic) IBOutlet WKWebView *webview;
 
 @end
@@ -181,69 +181,71 @@
 - (void)viewDidLoad
 {
         MXKAccount *account = [MXKAccountManager sharedManager].activeAccounts.firstObject;
-    
-        [super viewDidLoad];
-    
+    [super viewDidLoad];
+
         self.userID = account.mxCredentials.userId;
-    
+
         //язык устройства
         NSString *languages = [[NSLocale preferredLanguages] firstObject];
-    
+
         NSString *lang2str = [[languages componentsSeparatedByString:@"-"] objectAtIndex:0];
         NSString *logText = [NSString stringWithFormat:@"this is lang: %@", lang2str];
-    
+
         NSString *urlPath = [NSString stringWithFormat:@"https://qaim.me/%@/assistant", lang2str];
         NSURL *url = [NSURL URLWithString:urlPath];
         NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url];
-    
+
         //unixtime
         NSDate *date = [NSDate date];
         NSTimeInterval ti = [date timeIntervalSince1970];
-    
+
         //формирование токена
         NSString *token = [NSString stringWithFormat:@"%fXHD!!@69e%@", ti, self.userID];
-    
+
         //кодирование в md5
         NSString *params = token.MD5;
-    
+
         //параметры авторизации в строке
         NSMutableString *mutString = [[NSMutableString alloc] initWithString:@"Bearer "];
         [mutString appendFormat:@"%f", ti];
         [mutString appendString:@"-"];
         [mutString appendString:params];
-    
+
         //параметры авторизации в массив
         NSDictionary *paramsArray = @{
             @"Accept-language" : languages,
             @"Authorization" : mutString
         };
-    
+
         WKWebViewConfiguration *config = [[WKWebViewConfiguration alloc] init];
-    
-        WKWebView *webview = [[WKWebView alloc] initWithFrame:self.view.frame configuration:config];
-    
+
+        WKWebView *webviewui = [[WKWebView alloc] initWithFrame:CGRectMake(0, 40, self.view.bounds.size.width, self.view.bounds.size.height - 85) configuration:config];
+
         WKPreferences *preferences = [[WKPreferences alloc] init];
         preferences.javaScriptEnabled = true;
         preferences.javaScriptCanOpenWindowsAutomatically = true;
-    
+
         NSString *userAgent = [NSString stringWithFormat:@"Mozilla/4.0 (compatible; Universion/1.0; iOS; --%@--; +https://qwertynetworks.com)", self.userID];
-    
-        [webview.configuration.userContentController addScriptMessageHandler:self name:@"rendering"];
-        webview.customUserAgent = userAgent;
-        webview.configuration.preferences = preferences;
-        webview.navigationDelegate = self;
-        webview.UIDelegate = self;
-        webview.allowsBackForwardNavigationGestures = true;
-    
+
+        [webviewui.configuration.userContentController addScriptMessageHandler:self name:@"rendering"];
+        webviewui.customUserAgent = userAgent;
+        webviewui.configuration.preferences = preferences;
+        webviewui.navigationDelegate = self;
+        webviewui.UIDelegate = self;
+        webviewui.allowsBackForwardNavigationGestures = true;
+//        webviewui.layoutMargins = UIEdgeInsetsMake(0, 250, 250, 0);
+
         [request setAllHTTPHeaderFields:paramsArray];
-    
-        [webview loadRequest:request];
-        [self.view addSubview:webview];
+
+        [webviewui loadRequest:request];
+        [self.view addSubview:webviewui];
 }
 
 -(void)buttonClicked:(UIButton*)sender {
     NSLog(@"button back clicked");
 }
+
+
 
 - (WKWebView *)webView:(WKWebView *)webView createWebViewWithConfiguration:(WKWebViewConfiguration *)configuration forNavigationAction:(WKNavigationAction *)navigationAction windowFeatures:(WKWindowFeatures *)windowFeatures
 {
@@ -254,9 +256,16 @@
     return  nil;
 }
 
-
-
 - (IBAction)button_caction_back:(UIButton *)sender {
+}
+
+- (void)scrollToNextRoomWithMissedNotifications
+{
+    // Check whether the recents data source is correctly configured.
+    if (recentsDataSource.recentsDataSourceMode == RecentsDataSourceModeFavourites)
+    {
+        [self scrollToTheTopTheNextRoomWithMissedNotificationsInSection:recentsDataSource.favoritesSection];
+    }
 }
 
 #pragma mark - MasterTabBarItemDisplayProtocol
