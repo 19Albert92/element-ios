@@ -32,7 +32,7 @@ final class SpaceMemberDetailViewController: RoomMemberDetailsViewController {
 
     // MARK: Private
 
-    private var viewModel: SpaceMemberDetailViewModelType!
+     var viewModel: SpaceMemberDetailViewModelType!
     private var theme: Theme!
     private var keyboardAvoider: KeyboardAvoider?
     private var errorPresenter: MXKErrorPresentation!
@@ -143,6 +143,10 @@ final class SpaceMemberDetailViewController: RoomMemberDetailsViewController {
     // MARK: - RoomMemberDetailsViewController private
 
     @objc private func showRoom(withId roomId: String!) {
+        self.viewModel.process(viewAction: .openRoom(roomId))
+    }
+    
+    func myShowRoom(withId roomId: String!) {
         self.viewModel.process(viewAction: .openRoom(roomId))
     }
 

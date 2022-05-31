@@ -3,6 +3,7 @@
 "title_favourites" = "Favoris";
 "title_people" = "Personnes";
 "title_rooms" = "Salons";
+"title_BotAI" = "Intelligence Artificielle";
 "title_groups" = "Communautés";
 "warning" = "Attention";
 // Actions
@@ -1196,6 +1197,18 @@
 "home_empty_view_information" = "L’application tout-en-un de messagerie pour les équipes, amis et organisations. Appuyez sur le bouton « + » ci-dessous pour ajouter des personnes et des salons.";
 
 // MARK: - Home
+
+"home_context_menu_make_dm" = "Aller aux personnes";
+"home_context_menu_make_room" = "Aller aux salles";
+"home_context_menu_notifications" = "Notifications";
+"home_context_menu_mute" = "Muet";
+"home_context_menu_unmute" = "Rétablir le son";
+"home_context_menu_favourite" = "Favoris";
+"home_context_menu_unfavourite" = "Non favori";
+"home_context_menu_low_priority" = "Priorité basse";
+"home_context_menu_normal_priority" = "Priorité normale";
+"home_context_menu_leave" = "Quitter la pièce";
+"home_syncing" = "Synchronisation";
 
 "home_empty_view_title" = "Bienvenue dans %@,\n%@";
 "call_transfer_error_message" = "Échec du transfert de l’appel";

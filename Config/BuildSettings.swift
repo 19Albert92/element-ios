@@ -273,7 +273,7 @@ final class BuildSettings: NSObject {
     static let settingsScreenShowUserFirstName: Bool = false
     static let settingsScreenShowUserSurname: Bool = false
     static let settingsScreenAllowAddingEmailThreepids: Bool = true
-    static let settingsScreenAllowAddingPhoneThreepids: Bool = true
+    static let settingsScreenAllowAddingPhoneThreepids: Bool = false
     static let settingsScreenShowThreepidExplanatory: Bool = false // пояснение
     static let settingsScreenShowDiscoverySettings: Bool = true
     static let settingsScreenAllowIdentityServerConfig: Bool = true

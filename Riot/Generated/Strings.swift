@@ -4959,6 +4959,10 @@ public class VectorL10n: NSObject {
   public static var roomEventActionShare: String { 
     return VectorL10n.tr("Vector", "room_event_action_share") 
   }
+  /// Translate
+  public static var roomEventActionTranslate: String { 
+    return VectorL10n.tr("Vector", "room_event_action_translate") 
+  }
   /// View Decrypted Source
   public static var roomEventActionViewDecryptedSource: String { 
     return VectorL10n.tr("Vector", "room_event_action_view_decrypted_source") 
@@ -7714,6 +7718,10 @@ public class VectorL10n: NSObject {
   /// Threads
   public static var threadsTitle: String { 
     return VectorL10n.tr("Vector", "threads_title") 
+  }
+  /// Artificial Intelligence
+  public static var titleBotAI: String { 
+    return VectorL10n.tr("Vector", "title_BotAI") 
   }
   /// Favourites
   public static var titleFavourites: String { 

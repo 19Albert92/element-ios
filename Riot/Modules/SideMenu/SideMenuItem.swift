@@ -21,6 +21,9 @@ enum SideMenuItem {
     case inviteFriends
     case settings
     case help
+    
+    case bridgeTelegram
+    case bridgeWhatsApp
 //    case feedback
 }
 
@@ -36,6 +39,13 @@ extension SideMenuItem {
             title = VectorL10n.sideMenuActionSettings
         case .help:
             title = VectorL10n.sideMenuActionHelp
+            
+        case .bridgeTelegram:
+            title = "Telegram Bridge Bot"
+        
+        case .bridgeWhatsApp:
+            title = "WhatsApp Bridge Bot"
+        
 //        case .feedback:
 //            title = VectorL10n.sideMenuActionFeedback
         }
@@ -53,6 +63,13 @@ extension SideMenuItem {
             icon = Asset.Images.sideMenuActionIconSettings.image
         case .help:
             icon = Asset.Images.sideMenuActionIconHelp.image
+            
+        case .bridgeTelegram:
+            icon = ImageAsset.init(name: "telegram").image
+        
+        case .bridgeWhatsApp:
+            icon = ImageAsset.init(name: "whatsapp").image
+        
 //        case .feedback:
 //            icon = Asset.Images.sideMenuActionIconFeedback.image
         }

@@ -1,6 +1,7 @@
 // Titles
 "title_home" = "Inici";
-"title_favourites" = "Artificial Intelligence";
+"title_favourites" = "Preferits";
+"title_BotAI" = "Intel·ligència artificial";
 "title_people" = "Gent";
 "title_rooms" = "Sales";
 "warning" = "Avís";

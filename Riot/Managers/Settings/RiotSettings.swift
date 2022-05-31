@@ -269,8 +269,8 @@ final class RiotSettings: NSObject {
     @UserDefault(key: "homeScreenShowFavouritesTab", defaultValue: BuildSettings.homeScreenShowFavouritesTab, storage: defaults)
     var homeScreenShowFavouritesTab
     
-//    @UserDefault(key: "homeScreenShowAIBot", defaultValue: BuildSettings.homeScreenShowAIBot, storage: defaults)
-//    var homeScreenShowAIBot
+    @UserDefault(key: "homeScreenShowAIBot", defaultValue: BuildSettings.homeScreenShowAIBot, storage: defaults)
+    var homeScreenShowAIBot
     
     @UserDefault(key: "homeScreenShowPeopleTab", defaultValue: BuildSettings.homeScreenShowPeopleTab, storage: defaults)
     var homeScreenShowPeopleTab

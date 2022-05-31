@@ -48,7 +48,7 @@ final class InviteFriendsPresenter: NSObject {
     
     // MARK: - Private
     
-    private func shareInvite(from userId: String) {
+     func shareInvite(from userId: String) {
         
         let shareText = self.buildShareText(with: userId)
         

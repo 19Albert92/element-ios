@@ -179,18 +179,18 @@ final class RoomInfoListViewController: UIViewController {
         let rowSearch = Row(type: .default, icon: Asset.Images.searchIcon.image, text: VectorL10n.roomDetailsSearch, accessoryType: .disclosureIndicator) {
             self.viewModel.process(viewAction: .navigate(target: .search))
         }
-        let rowIntegrations = Row(type: .default, icon: Asset.Images.integrationsIcon.image, text: VectorL10n.roomDetailsIntegrations, accessoryType: .disclosureIndicator) {
-            self.viewModel.process(viewAction: .navigate(target: .integrations))
-        }
+//        let rowIntegrations = Row(type: .default, icon: Asset.Images.integrationsIcon.image, text: VectorL10n.roomDetailsIntegrations, accessoryType: .disclosureIndicator) {
+//            self.viewModel.process(viewAction: .navigate(target: .integrations))
+//        }
         
         var rows = [rowSettings]
         
         if BuildSettings.showNotificationsV2 {
             rows.append(roomNotifications)
         }
-        if RiotSettings.shared.roomInfoScreenShowIntegrations {
-            rows.append(rowIntegrations)
-        }
+//        if RiotSettings.shared.roomInfoScreenShowIntegrations {
+//            rows.append(rowIntegrations)
+//        }
         rows.append(rowMembers)
         rows.append(rowUploads)
         rows.append(rowSearch)

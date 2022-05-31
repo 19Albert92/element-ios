@@ -839,22 +839,6 @@
                           onTabBarItem:TABBAR_FAVOURITES_INDEX
                         withBadgeColor:(recentsDataSource.favoriteMissedDiscussionsCount.hasHighlight ? ThemeService.shared.theme.noticeColor : ThemeService.shared.theme.noticeSecondaryColor)];
     }
-    //ai
-//    if (RiotSettings.shared.homeScreenShowAIBot)
-//    {
-//        if (recentsDataSource.directMissedDiscussionsCount.hasUnsent)
-//        {
-//            [self setBadgeValue:@"!"
-//                               onTabBarItem:TABBAR_AI
-//                             withBadgeColor:ThemeService.shared.theme.noticeColor];
-//        }
-//        else
-//        {
-//            [self setMissedDiscussionsCount:recentsDataSource.directMissedDiscussionsCount.numberOfNotified
-//                               onTabBarItem:TABBAR_AI
-//                             withBadgeColor:(recentsDataSource.directMissedDiscussionsCount.hasHighlight ? ThemeService.shared.theme.noticeColor : ThemeService.shared.theme.noticeSecondaryColor)];
-//        }
-//    }
     
     // Update the badge on People and Rooms tabs
     if (RiotSettings.shared.homeScreenShowPeopleTab)
@@ -1124,10 +1108,6 @@
         {
             [self.favouritesViewController scrollToNextRoomWithMissedNotifications];
         }
-//        else if (item.tag == TABBAR_AI)
-//        {
-//            [self.botsViewController scrollToNextRoomWithMissedNotifications];
-//        }
     }
 }
 

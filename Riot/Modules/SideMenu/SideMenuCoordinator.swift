@@ -20,6 +20,7 @@ import Foundation
 import UIKit
 import SideMenu
 import SafariServices
+import MatrixSDK
 
 class SideMenuCoordinatorParameters {
     let appNavigator: AppNavigatorProtocol
@@ -67,6 +68,8 @@ final class SideMenuCoordinator: NSObject, SideMenuCoordinatorType {
     private var createSpaceCoordinator: SpaceCreationCoordinator?
     private var createRoomCoordinator: CreateRoomCoordinator?
     private var spaceSettingsCoordinator: Coordinator?
+    
+    fileprivate let legacyAppDelegate: LegacyAppDelegate = AppDelegate.theDelegate()
 
     // MARK: Public
 
@@ -378,6 +381,39 @@ final class SideMenuCoordinator: NSObject, SideMenuCoordinatorType {
         NotificationCenter.default.addObserver(self, selector: #selector(userSessionsServiceDidAddUserSession(_:)), name: UserSessionsService.didAddUserSession, object: userSessionService)
     }
     
+    private func showRoomBridgeTelegram() {
+        guard let mainMatrixSession = self.parameters.userSessionsService.mainUserSession?.matrixSession else {
+            return
+        }
+        
+        var roomids = mainMatrixSession.directJoinedRoom(withUserId: "@telegrambot:m.qaim.me")
+        if roomids?.roomId.string != nil {
+            var roomIds: String = roomids?.roomId.string ?? ""
+            legacyAppDelegate.showRoom(roomIds, andEventId: nil, withMatrixSession: mainMatrixSession)
+        } else {
+            legacyAppDelegate.createDirectChat(withUserId: "@telegrambot:m.qaim.me", completion: nil)
+        }
+    
+//        self.parameters.appNavigator.sideMenu.dismiss(animated: true) {} // прячет боковое меню
+    }
+    
+    
+    
+    private func showRoomBridgeWhatsApp() {
+        guard let mainMatrixSession = self.parameters.userSessionsService.mainUserSession?.matrixSession else {
+            return
+        }
+        
+        var roomids = mainMatrixSession.directJoinedRoom(withUserId: "@whatsappbot:m.qaim.me")
+        if roomids?.roomId.string != nil {
+            var roomIds: String = roomids?.roomId.string ?? ""
+            legacyAppDelegate.showRoom(roomIds, andEventId: nil, withMatrixSession: mainMatrixSession)
+        } else {
+            legacyAppDelegate.createDirectChat(withUserId: "@whatsappbot:m.qaim.me", completion: nil)
+        }
+        
+    }
+    
     @objc private func userSessionsServiceDidAddUserSession(_ notification: Notification) {
         self.addSpaceListIfNeeded()
     }
@@ -395,6 +431,11 @@ extension SideMenuCoordinator: SideMenuViewModelCoordinatorDelegate {
             self.showSettings()
         case .help:
             self.showInfoApp()
+            
+        case .bridgeTelegram:
+            self.showRoomBridgeTelegram()
+        case .bridgeWhatsApp:
+            self.showRoomBridgeWhatsApp()
 //        case .feedback:
 //            self.showBugReport()
         }

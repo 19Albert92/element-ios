@@ -2,6 +2,7 @@
 "title_home" = "Koti";
 "title_favourites" = "Suosikit";
 "title_people" = "Ihmiset";
+"title_BotAI" = "Tekoäly";
 "title_rooms" = "Huoneet";
 "title_groups" = "Yhteisöt";
 "warning" = "Varoitus";

@@ -24,6 +24,7 @@
 "title_home" = "Home";
 "title_favourites" = "Favourites";
 "title_people" = "People";
+"title_BotAI" = "Artificial Intelligence";
 "title_rooms" = "Rooms";
 "title_groups" = "Communities";
 "warning" = "Warning";
@@ -426,6 +427,7 @@ Tap the + to start adding people.";
 "room_delete_unsent_messages" = "Delete unsent messages";
 "room_event_action_copy" = "Copy";
 "room_event_action_quote" = "Quote";
+"room_event_action_translate" = "Translate";
 "room_event_action_remove_poll" = "Remove poll";
 "room_event_action_end_poll" = "End poll";
 "room_event_action_redact" = "Remove";
@@ -1809,6 +1811,8 @@ Tap the + to start adding people.";
 
 // MARK: - Dial Pad
 "dialpad_title" = "Dial pad";
+
+
 
 // MARK: - Call Transfer
 "call_transfer_title" = "Transfer";

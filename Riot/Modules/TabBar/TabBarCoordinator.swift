@@ -253,14 +253,14 @@ final class TabBarCoordinator: NSObject, TabBarCoordinatorType {
         return favouritesViewController
     }
 
-//    //ai item
-//    private func createBotAIViewController() -> BotsViewController {
-//        let botsViewController: BotsViewController = BotsViewController.instantiate()
-//        botsViewController.tabBarItem.tag = Int(TABBAR_AI)
-//        botsViewController.accessibilityLabel = VectorL10n.titleFavourites
+    //ai item
+    private func createBotAIViewController() -> BotsViewController {
+        let botsViewController: BotsViewController = BotsViewController.instantiate()
+        botsViewController.tabBarItem.tag = Int(TABBAR_AI)
+        botsViewController.accessibilityLabel = VectorL10n.titleBotAI
 //        botsViewController.userIndicatorStore = UserIndicatorStore(presenter: indicatorPresenter)
-//        return botsViewController
-//    }
+        return botsViewController
+    }
     
     private func createPeopleViewController() -> PeopleViewController {
         let peopleViewController: PeopleViewController = PeopleViewController.instantiate()
@@ -278,12 +278,12 @@ final class TabBarCoordinator: NSObject, TabBarCoordinatorType {
         return roomsViewController
     }
     
-    private func createGroupsViewController() -> GroupsViewController {
-        let groupsViewController: GroupsViewController = GroupsViewController.instantiate()
-        groupsViewController.tabBarItem.tag = Int(TABBAR_GROUPS_INDEX)
-        groupsViewController.accessibilityLabel = VectorL10n.titleGroups
-        return groupsViewController
-    }
+//    private func createGroupsViewController() -> GroupsViewController {
+//        let groupsViewController: GroupsViewController = GroupsViewController.instantiate()
+//        groupsViewController.tabBarItem.tag = Int(TABBAR_GROUPS_INDEX)
+//        groupsViewController.accessibilityLabel = VectorL10n.titleGroups
+//        return groupsViewController
+//    }
     
     private func createUnifiedSearchController() -> UnifiedSearchViewController {
         
@@ -343,10 +343,10 @@ final class TabBarCoordinator: NSObject, TabBarCoordinatorType {
         }
         
         //bot ai
-//        if RiotSettings.shared.homeScreenShowAIBot {
-//            let botsViewController = self.createBotAIViewController()
-//            viewControllers.append(botsViewController)
-//        }
+        if RiotSettings.shared.homeScreenShowAIBot {
+            let botsViewController = self.createBotAIViewController()
+            viewControllers.append(botsViewController)
+        }
         
         if RiotSettings.shared.homeScreenShowPeopleTab {
             let peopleViewController = self.createPeopleViewController()
@@ -358,10 +358,10 @@ final class TabBarCoordinator: NSObject, TabBarCoordinatorType {
             viewControllers.append(roomsViewController)
         }
         
-        if RiotSettings.shared.homeScreenShowCommunitiesTab && !(self.currentMatrixSession?.groups().isEmpty ?? false) && showCommunities {
-            let groupsViewController = self.createGroupsViewController()
-            viewControllers.append(groupsViewController)
-        }
+//        if RiotSettings.shared.homeScreenShowCommunitiesTab && !(self.currentMatrixSession?.groups().isEmpty ?? false) && showCommunities {
+//            let groupsViewController = self.createGroupsViewController()
+//            viewControllers.append(groupsViewController)
+//        }
         
         tabBarController.updateViewControllers(viewControllers)
     }

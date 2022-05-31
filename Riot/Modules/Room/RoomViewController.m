@@ -3623,7 +3623,7 @@ static CGSize kThreadListBarButtonItemImageSize;
         if (!isJitsiCallEvent && selectedEvent.eventType != MXEventTypePollStart)
         {
             [self.eventMenuBuilder addItemWithType:EventMenuItemTypeTranslate
-                                            action:[UIAlertAction actionWithTitle:@"Translate"
+                                            action:[UIAlertAction actionWithTitle: VectorL10n.roomEventActionTranslate
                                                                             style:UIAlertActionStyleDefault
                                                                           handler:^(UIAlertAction * action) {
                

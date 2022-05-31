@@ -18,6 +18,32 @@
 import UIKit
 import MatrixSDK
 
+extension UIViewController {
+    func hideKeyboardWhenTappedAround() {
+        let tap = UITapGestureRecognizer(target: self, action: #selector(UIViewController.dismissKeyboard))
+        tap.cancelsTouchesInView = false
+        view.addGestureRecognizer(tap)
+    }
+    
+    @objc func dismissKeyboard() {
+        view.endEditing(true)
+    }
+}
+
+extension String {
+    func attributedStringWithColor(_ strings: String, color: UIColor, characterSpacing: UInt? = nil) -> NSAttributedString {
+        let attributedString = NSMutableAttributedString(string: self)
+        let range = (self as NSString).range(of: strings)
+            attributedString.addAttribute(NSAttributedString.Key.foregroundColor, value: color, range: range)
+
+        guard let characterSpacing = characterSpacing else {return attributedString}
+
+        attributedString.addAttribute(NSAttributedString.Key.kern, value: characterSpacing, range: NSRange(location: 0, length: attributedString.length))
+
+        return attributedString
+    }
+}
+
 extension UITextField {
 
     func setUnderLine() {
@@ -37,15 +63,15 @@ extension UITextField {
 
 class RegistrationViewController: UIViewController {
     
+    
     //edit text
     @IBOutlet weak var EmailEditText: UITextField!
     @IBOutlet weak var PasswordEditText: UITextField!
     @IBOutlet weak var NameEditText: UITextField!
     @IBOutlet weak var SurNameEditText: UITextField!
     
-    @IBOutlet weak var SelectDatePicker: UITextField!
     //text view
-    @IBOutlet weak var textDateText: UILabel!
+    @IBOutlet weak var text_permission: UILabel!
     
     //button
     @IBOutlet weak var button_to_register: UIButton!
@@ -54,7 +80,6 @@ class RegistrationViewController: UIViewController {
             name: NameEditText.text!,
             surname: SurNameEditText.text!,
             email: EmailEditText.text!,
-            dateBirth: SelectDatePicker.text!,
             password: PasswordEditText.text!)
     }
     
@@ -64,20 +89,53 @@ class RegistrationViewController: UIViewController {
     //image
     @IBOutlet weak var Icon: UIImageView!
     
+    //switch
+    @IBAction func action_switch_permission(_ sender: UISwitch) {
+    }
+    @IBOutlet weak var switch_permission: UISwitch!
+    
+    private var theme: Theme!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.hideKeyboardWhenTappedAround()
+        //set theme
+        self.update(theme: ThemeService.shared().theme)
+        //button
         button_to_register.isUserInteractionEnabled = false
         button_to_register.alpha = 0.7
         
         self.initialViewElements()
         self.initValidateTextField()
-        self.createDataPicker()
         self.languageLocal()
+        
+        //text view
+        let attributedWithTextColor: NSAttributedString = text_permission.text!.attributedStringWithColor(NSLocalizedString("tearms", comment: "text permmission"), color: UIColor(red: 12/255.0, green: 185/255.0, blue: 136/255.0, alpha: 1))
+        text_permission.attributedText = attributedWithTextColor
     }
     
+    // MARK: - Public
+    //set theme
+    private func update(theme: Theme) {
+        self.theme = theme
+        self.view.backgroundColor = theme.backgroundColor
+        
+        if let navigationBar = self.navigationController?.navigationBar {
+            theme.applyStyle(onNavigationBar: navigationBar)
+        }
+        //text view
+        self.text_permission.textColor = theme.textPrimaryColor
+        //field text
+        self.EmailEditText.textColor = theme.textPrimaryColor
+        self.PasswordEditText.textColor = theme.textPrimaryColor
+        self.NameEditText.textColor = theme.textPrimaryColor
+        self.SurNameEditText.textColor = theme.textPrimaryColor
+    }
+    
+    // MARK: - language
     func languageLocal() {
-        //placeholders
+        //placeholders to edit text
         EmailEditText.attributedPlaceholder = NSAttributedString(string: NSLocalizedString("placeholder_to_field_text_email", comment: "placeholder_email"),
                                                                  attributes: [NSAttributedString.Key.foregroundColor : UIColor(red: 150/255.0, green: 157/255.0, blue: 169/255.0, alpha: 1)])
         
@@ -90,27 +148,23 @@ class RegistrationViewController: UIViewController {
         SurNameEditText.attributedPlaceholder = NSAttributedString(string: NSLocalizedString("placeholder_to_field_text_surname", comment: "placeholder_email"),
                                                                  attributes: [NSAttributedString.Key.foregroundColor : UIColor(red: 150/255.0, green: 157/255.0, blue: 169/255.0, alpha: 1)])
         
-        SelectDatePicker.attributedPlaceholder = NSAttributedString(string: self.formateDate(date: Date()),
-                                                                 attributes: [NSAttributedString.Key.foregroundColor : UIColor(red: 150/255.0, green: 157/255.0, blue: 169/255.0, alpha: 1)])
-        
         //text view
-        textDateText.text = NSLocalizedString("text_name_section_date_birth", comment: "date_text")
+        text_permission.text = NSLocalizedString("text_main_permission", comment: "text permission")
         //button
         button_to_register.setTitle(NSLocalizedString("btn_go_to_login_in_register", comment: "button_register"), for: .normal)
     }
     
+    // MARK: - initial validation for text field
     func initValidateTextField() {
         //validation
         EmailEditText.addTarget(self, action: #selector(textFieldDidChange(_:)), for: .editingChanged)
         PasswordEditText.addTarget(self, action: #selector(textFieldDidChange(_:)), for: .editingChanged)
         NameEditText.addTarget(self, action: #selector(textFieldDidChange(_:)), for: .editingChanged)
         SurNameEditText.addTarget(self, action: #selector(textFieldDidChange(_:)), for: .editingChanged)
-
-        SelectDatePicker.addTarget(self, action: #selector(textFieldDidChange(_:)), for: .allEvents)
     }
     
     @objc func textFieldDidChange(_ textFields:UITextField) {
-        if EmailEditText.text!.isEmpty || PasswordEditText.text!.isEmpty || NameEditText.text!.isEmpty || SurNameEditText.text!.isEmpty || SelectDatePicker.text!.isEmpty {
+        if EmailEditText.text!.isEmpty || PasswordEditText.text!.isEmpty || NameEditText.text!.isEmpty || SurNameEditText.text!.isEmpty {
             button_to_register.isUserInteractionEnabled = false
             button_to_register.alpha = 0.7
         } else {
@@ -119,7 +173,9 @@ class RegistrationViewController: UIViewController {
         }
     }
     
+    // MARK: - initial view element
     func initialViewElements() {
+        //button
         self.button_to_register.backgroundColor = UIColor(red: 12/255.0, green: 185/255.0, blue: 136/255.0, alpha: 1)
         self.button_to_register.tintColor = .white
         
@@ -132,25 +188,20 @@ class RegistrationViewController: UIViewController {
         SurNameEditText.setUnderLine()
         //image
         self.Icon.tintColor = UIColor(red: 12/255.0, green: 185/255.0, blue: 136/255.0, alpha: 1)
+        
+        //text view
+        text_permission.isUserInteractionEnabled = true
+        let guestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(clickedToSiteQaim(_:)))
+        text_permission.addGestureRecognizer(guestureRecognizer)
+        
+        //switch
+        switch_permission.onTintColor = UIColor(red: 12/255.0, green: 185/255.0, blue: 136/255.0, alpha: 1)
     }
     
-    func createDataPicker(){
-        dataPicker.datePickerMode = .date
-        dataPicker.addTarget(self, action: #selector(dateChange(datePicker:)), for: UIControl.Event.valueChanged)
-        dataPicker.frame.size = CGSize(width: 0, height: 300)
-        if #available(iOS 13.4, *) {
-            dataPicker.preferredDatePickerStyle = .wheels
-        } else {
-            // Fallback on earlier versions
-        }
-        dataPicker.maximumDate = Date()
-        toolbarForInput()
-        SelectDatePicker.inputView = dataPicker
-        dataPicker.locale = Locale(identifier: localeDatePicker())
-    }
-    
-    @objc func dateChange(datePicker: UIDatePicker) {
-        SelectDatePicker.text = formateDate(date: datePicker.date)
+    @objc func clickedToSiteQaim(_ sender: Any) {
+        var urls = String(format: "https://qaim.me/%@/agreement", getLang())
+        guard let url = URL(string: urls) else { return }
+        UIApplication.shared.open(url)
     }
     
     func formateDate(date: Date) -> String {
@@ -160,38 +211,16 @@ class RegistrationViewController: UIViewController {
         return formater.string(from: date)
     }
     
-    func toolbarForInput(){
-        let toolbar = UIToolbar()
-        toolbar.sizeToFit()
-        
-        let doneBtn = UIBarButtonItem(barButtonSystemItem: .done, target: self, action: #selector(doneAction))
-        
-        let flexSpace = UIBarButtonItem(barButtonSystemItem: .flexibleSpace, target: nil, action: nil)
-        
-        toolbar.setItems([flexSpace,doneBtn], animated: true)
-        SelectDatePicker.inputAccessoryView = toolbar
-    }
-    
-    @objc func doneAction(){
-        view.endEditing(true)// закрытие datepicker по нажатию на кнопку
-    }
-    
     func localeDatePicker() -> String {
         let locale = Locale.preferredLanguages.first
         return locale!
     }
     
-    func requestPostRegistration(name: String, surname: String, email: String, dateBirth: String, password: String) {
-        
-        var dateTime = self.getDateText(date: dateBirth).components(separatedBy: "/")
-
-        let dayTime = dateTime[1]
-        let monthTime = dateTime[0]
-        let yearTime = dateTime[2]
+    func requestPostRegistration(name: String, surname: String, email: String, password: String) {
         
         var isTrue: Bool = false
 
-        let data : Data = "thisprojectid=\(11)&this_http_host=\("qaim.me")&lng=\(self.getLang())&email=\(email)&mailretry=\("")&password=\(password)&yourname=\(name)&surname=\(surname)&birthdateday=\(dayTime)&birthdatemonth=\(monthTime)&birthdateyear=\(yearTime)&checkID=\(1)&userUTC=\(1)&returnurl=\("")".data(using: .utf8)!
+        let data : Data = "thisprojectid=\(11)&this_http_host=\("qaim.me")&lng=\(self.getLang())&email=\(email)&mailretry=\("")&password=\(password)&yourname=\(name)&surname=\(surname)&birthdateday=\(01)&birthdatemonth=\(01)&birthdateyear=\(1970)&checkID=\(1)&userUTC=\(1)&returnurl=\("")".data(using: .utf8)!
 
         let url = URL(string: "https://qwertynetworks.com/register.php")!
 
@@ -208,7 +237,12 @@ class RegistrationViewController: UIViewController {
 
             if responseText == "OK" && error == nil {
                 DispatchQueue.main.sync {
-                    self.showAlertSuccess()
+                    if self.switch_permission.isOn {
+                        self.showAlertSuccess()
+                    } else {
+                        self.showAlertSuccessNotSitchPermission()
+                    }
+                    
                 }
             } else if responseText != "OK" {
                 DispatchQueue.main.async {
@@ -236,10 +270,18 @@ class RegistrationViewController: UIViewController {
     }
     
     func showAlertSuccess() {
-        let alert = UIAlertController(title: "", message: "Посмотрите на ваш почтовый адресс", preferredStyle: .alert)
-        alert.addAction(UIAlertAction(title: "Done", style: .cancel, handler: { _ in
+        let alert = UIAlertController(title: "", message: NSLocalizedString("success_request_to_register", comment: "success text"), preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "Done", style: .cancel, handler: { _ in
             self.navigationController?.popViewController(animated: true)
+
         }))
+        self.present(alert, animated: true, completion: nil)
+    }
+    
+    func showAlertSuccessNotSitchPermission() {
+        let alert = UIAlertController(title: "", message: NSLocalizedString("error_text_permission", comment: "error to switch text"), preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "Yes", style: .cancel, handler: { _ in self.showAlertSuccess() }))
+        alert.addAction(UIAlertAction(title: "No", style: .destructive, handler: { _ in }))
         self.present(alert, animated: true, completion: nil)
     }
     

@@ -275,6 +275,8 @@ internal class Asset: NSObject {
     internal static let imagesIconQAIMWhite = ImageAsset(name: "images_icon_QAIM_white")
     internal static let launchScreenLogo = ImageAsset(name: "launch_screen_logo")
     internal static let qaimLogoAndText = ImageAsset(name: "qaim_logo_and_text")
+    internal static let telegram = ImageAsset(name: "telegram")
+    internal static let whatsapp = ImageAsset(name: "whatsapp")
   }
   @objcMembers
   @objc(AssetSharedImages) internal class SharedImages: NSObject {

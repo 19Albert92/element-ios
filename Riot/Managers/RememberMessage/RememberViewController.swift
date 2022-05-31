@@ -39,9 +39,15 @@ class RememberViewController: UIViewController {
     @IBAction func actionButtonToLogin(_ sender: UIButton) {
         self.requestPostRemember(emailRemember: EmailEditText.text!)
     }
+    private var theme: Theme!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        //set theme
+        self.update(theme: ThemeService.shared().theme)
+        
+        self.hideKeyboardWhenTappedAround()
         
         button_to_rememberLog.isUserInteractionEnabled = false
         button_to_rememberLog.alpha = 0.7
@@ -51,6 +57,7 @@ class RememberViewController: UIViewController {
         self.languageLocal()
     }
     
+    //MARK: - set language
     func languageLocal() {
         //placeholders
         EmailEditText.attributedPlaceholder = NSAttributedString(string: NSLocalizedString("placeholder_to_field_text_email", comment: "placeholder_email"),
@@ -60,10 +67,22 @@ class RememberViewController: UIViewController {
         button_to_rememberLog.setTitle(NSLocalizedString(VectorL10n .bugReportSend, comment: "rememeberPassword"), for: .normal)
     }
     
-    func initValidateTextField() {
-       
+    func initValidateTextField() {}
+    
+    // MARK: - Public
+    //set theme
+    private func update(theme: Theme) {
+        self.theme = theme
+        self.view.backgroundColor = theme.backgroundColor
+        
+        if let navigationBar = self.navigationController?.navigationBar {
+            theme.applyStyle(onNavigationBar: navigationBar)
+        }
+        //text field text
+        self.EmailEditText.textColor = theme.textPrimaryColor
     }
     
+    //MARK: - initial view element
     func initialViewElements() {
         self.button_to_rememberLog.backgroundColor = UIColor(red: 12/255.0, green: 185/255.0, blue: 136/255.0, alpha: 1)
         self.button_to_rememberLog.tintColor = .white
@@ -108,6 +127,7 @@ class RememberViewController: UIViewController {
         }.resume()
     }
     
+    //MARK: - show alert error
     func showAlertError(message: String) {
         let alert = UIAlertController(title: "", message: message, preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: NSLocalizedString("done", comment: "empty_btn"), style: .cancel, handler: nil))
@@ -122,6 +142,7 @@ class RememberViewController: UIViewController {
         self.present(alert, animated: true, completion: nil)
     }
     
+    //MARK: - get lang
     func getLang() -> String {
         var lang: String = ""
         if Locale.preferredLanguages[0].count > 2 {

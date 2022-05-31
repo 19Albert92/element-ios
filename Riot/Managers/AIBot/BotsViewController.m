@@ -22,24 +22,24 @@
 #import "NSString+MD5.h"
 
 
-#import "FavouritesViewController.h"
+//#import "FavouritesViewController.h"
 
 #import "GeneratedInterface-Swift.h"
 
-#import "RecentsDataSource.h"
+//#import "RecentsDataSource.h"
 
 #import "TableViewCellWithCollectionView.h"
 #import "RoomCollectionViewCell.h"
 
 #import "MXRoom+Riot.h"
 
-@interface BotsViewController() <WKNavigationDelegate> {
+@interface BotsViewController() <WKNavigationDelegate, MasterTabBarItemDisplayProtocol> {
     RecentsDataSource *recentsDataSource;
 }
 
 @property (strong, nonatomic) NSString *userID;
+@property (weak, nonatomic) IBOutlet WKWebView *webview;
 
-@property(strong, nonatomic)WKWebView *webview;
 @property(strong, nonatomic)NSString *url;
 
 @end
@@ -55,79 +55,62 @@
 
 - (void)viewDidLoad
 {
+    //язык устройства
+    NSString *languages = [[NSLocale preferredLanguages] firstObject];
 
-    self.url = @"https://youtube.com";
+    NSString *lang2str = [[languages componentsSeparatedByString:@"-"] objectAtIndex:0];
+
+    NSString *urlses = [NSString stringWithFormat:@"https://qaim.me/%@/assistant", lang2str ];
+    self.url = urlses;
     NSURL *urls = [NSURL URLWithString:self.url];
-    NSURLRequest *request = [NSURLRequest requestWithURL:urls];
-    self.webview = [[WKWebView alloc] init];
+//    self.webview = [[WKWebView alloc] init];
     self.webview.UIDelegate = self;
     self.webview.navigationDelegate = self;
+
+    MXKAccount *account = [MXKAccountManager sharedManager].activeAccounts.firstObject;
+
+    [super viewDidLoad];
+
+    self.userID = account.mxCredentials.userId;
+
+    NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:urls];
+
+    //unixtime
+    NSDate *date = [NSDate date];
+    NSTimeInterval ti = [date timeIntervalSince1970];
+
+    //формирование токена
+    NSString *token = [NSString stringWithFormat:@"%fXHD!!@69e%@", ti, self.userID];
+
+    //кодирование в md5
+    NSString *params = token.MD5;
+
+    //параметры авторизации в строке
+    NSMutableString *mutString = [[NSMutableString alloc] initWithString:@"Bearer "];
+    [mutString appendFormat:@"%f", ti];
+    [mutString appendString:@"-"];
+    [mutString appendString:params];
+
+    //параметры авторизации в массив
+    NSDictionary *paramsArray = @{
+        @"Accept-language" : languages,
+        @"Authorization" : mutString
+    };
+    WKWebViewConfiguration *config = [[WKWebViewConfiguration alloc] init];
+
+    WKWebView *webview = [[WKWebView alloc] initWithFrame:self.view.frame configuration:config];
+
+    WKPreferences *preferences = [[WKPreferences alloc] init];
+    preferences.javaScriptEnabled = true;
+    preferences.javaScriptCanOpenWindowsAutomatically = true;
+
+    NSString *userAgent = [NSString stringWithFormat:@"Mozilla/4.0 (compatible; Universion/1.0; iOS; --%@--; +https://qwertynetworks.com)", self.userID];
+
+    [self.webview.configuration.userContentController addScriptMessageHandler:self name:@"rendering"];
+    self.webview.customUserAgent = userAgent;
+
+    [request setAllHTTPHeaderFields:paramsArray];
     [self.webview loadRequest:request];
-    self.webview.frame = CGRectMake(self.view.frame.origin.x, 85, self.view.frame.size.width, self.view.frame.size.height);
-    [self.view addSubview:self.webview];
-
-//    MXKAccount *account = [MXKAccountManager sharedManager].activeAccounts.firstObject;
-//
-//    [super viewDidLoad];
-//
-//    self.userID = account.mxCredentials.userId;
-//
-//    //язык устройства
-//    NSString *languages = [[NSLocale preferredLanguages] firstObject];
-//
-//    NSString *lang2str = [[languages componentsSeparatedByString:@"-"] objectAtIndex:0];
-//    NSString *logText = [NSString stringWithFormat:@"this is lang: %@", lang2str];
-//    NSLog(logText);
-//
-//    NSString *urlPath = [NSString stringWithFormat:@"https://qaim.me/%@/assistant", lang2str];
-//    NSLog(lang2str);
-//    NSURL *url = [NSURL URLWithString:urlPath];
-//    NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url];
-//
-//    //unixtime
-//    NSDate *date = [NSDate date];
-//    NSTimeInterval ti = [date timeIntervalSince1970];
-//
-//    //формирование токена
-//    NSString *token = [NSString stringWithFormat:@"%fXHD!!@69e%@", ti, self.userID];
-//
-//    //кодирование в md5
-//    NSString *params = token.MD5;
-//
-//    //параметры авторизации в строке
-//    NSMutableString *mutString = [[NSMutableString alloc] initWithString:@"Bearer "];
-//    [mutString appendFormat:@"%f", ti];
-//    [mutString appendString:@"-"];
-//    [mutString appendString:params];
-//
-//    //параметры авторизации в массив
-//    NSDictionary *paramsArray = @{
-//        @"Accept-language" : languages,
-//        @"Authorization" : mutString
-//    };
-//
-//    WKWebViewConfiguration *config = [[WKWebViewConfiguration alloc] init];
-//
-//    WKWebView *webview = [[WKWebView alloc] initWithFrame:self.view.frame configuration:config];
-//
-//    WKPreferences *preferences = [[WKPreferences alloc] init];
-//    preferences.javaScriptEnabled = true;
-//    preferences.javaScriptCanOpenWindowsAutomatically = true;
-//
-//    NSString *userAgent = [NSString stringWithFormat:@"Mozilla/4.0 (compatible; Universion/1.0; iOS; --%@--; +https://qwertynetworks.com)", self.userID];
-//
-////    [webview.configuration.userContentController addScriptMessageHandler:self name:@"rendering"];
-//    webview.customUserAgent = userAgent;
-//    webview.configuration.preferences = preferences;
-//    webview.navigationDelegate = self;
-//
-//    [request setAllHTTPHeaderFields:paramsArray];
-//
-//    [webview loadRequest:request];
-//    [self.view addSubview:webview];
-
-
-
 }
 
 - (void)viewWillAppear:(BOOL)animated
@@ -145,15 +128,6 @@
     }
 }
 
-- (void)scrollToNextRoomWithMissedNotifications
-{
-    // Check whether the recents data source is correctly configured.
-    if (recentsDataSource.recentsDataSourceMode == RecentsDataSourceModePeople)
-    {
-        [self scrollToTheTopTheNextRoomWithMissedNotificationsInSection:recentsDataSource.conversationSection];
-    }
-}
-
 - (void)userContentController:(WKUserContentController *)userContentController didReceiveScriptMessage:(WKScriptMessage *)message{
     NSLog(@"message = %@", message.body); // полученное сообщение
 }
@@ -162,7 +136,16 @@
 
 - (NSString *)masterTabBarItemTitle
 {
-    return [VectorL10n titleFavourites];
+    return [VectorL10n titleBotAI];
+}
+
+- (WKWebView *)webView:(WKWebView *)webView createWebViewWithConfiguration:(WKWebViewConfiguration *)configuration forNavigationAction:(WKNavigationAction *)navigationAction windowFeatures:(WKWindowFeatures *)windowFeatures
+{
+    if (navigationAction.targetFrame == nil) {
+        NSString *url = [NSString stringWithFormat:@"%@", navigationAction.request.URL];
+        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:url]];
+    }
+    return  nil;
 }
 
 

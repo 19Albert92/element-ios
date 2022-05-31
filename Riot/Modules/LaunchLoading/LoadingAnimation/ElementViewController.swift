@@ -11,7 +11,7 @@ public class ElementViewController: UIViewController {
 
     public override func viewDidLoad() {
         super.viewDidLoad()
-        timeline = Timeline_1(view: element, duration: 2)
+        timeline = Timeline_1(view: element, duration: 1)
 
         timeline.play()
         DispatchQueue.main.asyncAfter(deadline: .now() + timeline.duration) {

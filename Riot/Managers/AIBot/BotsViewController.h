@@ -20,7 +20,7 @@
 #import "WebKit/WKWebView.h"
 #import "MXKDataSource.h"
 
-@interface BotsViewController : RecentsViewController
+@interface BotsViewController : UIViewController
 
 + (instancetype) instantiate;
 

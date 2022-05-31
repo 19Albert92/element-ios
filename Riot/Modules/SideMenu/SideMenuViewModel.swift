@@ -106,6 +106,8 @@ final class SideMenuViewModel: SideMenuViewModelType {
         }
         
         sideMenuItems += [
+            .bridgeTelegram,
+            .bridgeWhatsApp,
             .settings,
             .help
 //            .feedback
